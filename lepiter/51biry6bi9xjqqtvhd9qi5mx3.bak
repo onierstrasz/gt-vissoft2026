@@ -82,7 +82,45 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T16:20:32.510415+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-21T09:40:16.293565+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "MMVj3qVASG26PUwHb8+zLw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Towards Actionable Visualization — notes]] "
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -92,7 +130,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-20T16:20:32.510415+02:00"
+						"dateAndTimeString" : "2026-08-26T08:36:47.863712+02:00"
 					}
 				},
 				"editEmail" : {
@@ -103,17 +141,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-21T09:40:16.293565+02:00"
+						"dateAndTimeString" : "2026-08-26T08:36:52.304654+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "MMVj3qVASG26PUwHb8+zLw=="
+					"uidString" : "RDTYIb3HSnu+vXXvxlF+xA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Towards Actionable Visualization — notes]] "
+				"string" : "*Recover this page:*"
 			},
 			{
 				"__type" : "textSnippet",
@@ -171,7 +209,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-25T18:37:04.71735+02:00"
+									"dateAndTimeString" : "2026-08-26T08:46:22.30309+02:00"
 								}
 							},
 							"editEmail" : {
@@ -182,23 +220,61 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-25T18:37:04.71735+02:00"
+									"dateAndTimeString" : "2026-08-26T08:46:22.30309+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "435seSwVTbWNjb7GIYxDeg=="
+								"uidString" : "/ms2NzxWRT6r8jtB5OPZ5Q=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Use the data from the 2016 paper?\nSee the [replication package](https://scg.unibe.ch/research/visualisation-review).\nThe UTF-8 CSV link: [](https://scg.unibe.ch/download/merino/review-vissoft/dataset-utf8.zip).\nLet's explore: [[Exploring the Actionable Visualization replication package]]"
+							"string" : "We want to download the dataset, have the LLM create a model of the dataset, then add visualizations to answer questions."
 						},
 						{
-							"__type" : "pharoSnippet",
+							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [ ]
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-26T08:44:55.541536+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-26T08:46:30.145685+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "bOBCLbLPRtqW/IKVvOp8kA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "[[First exploration of the Actionable Visualization replication package]]"
+									}
+								]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -208,7 +284,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-25T18:37:12.679794+02:00"
+									"dateAndTimeString" : "2026-08-26T08:38:02.640673+02:00"
 								}
 							},
 							"editEmail" : {
@@ -219,14 +295,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-25T18:37:16.064493+02:00"
+									"dateAndTimeString" : "2026-08-26T08:44:40.694678+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "3k4UGvU2SSycIgy/LGUwKA=="
+								"uidString" : "wYsrpUF4S4yeuXh3Dt20yw=="
 							},
-							"code" : "FileLocator imageDirectory"
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Downloading the VISSOFT 2016 Dataset]]"
 						},
 						{
 							"__type" : "textSnippet",
@@ -242,7 +321,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-25T18:37:54.46311+02:00"
+									"dateAndTimeString" : "2026-08-26T08:47:18.268082+02:00"
 								}
 							},
 							"editEmail" : {
@@ -253,51 +332,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-25T18:38:11.537825+02:00"
+									"dateAndTimeString" : "2026-08-26T08:47:45.118682+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "62UeIJbVQwyVlvC22qxmZw=="
+								"uidString" : "7j/G3JQxQraSMt4m2FxJvA=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Let's copy the replication to a local folder."
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-25T18:37:48.960175+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-25T18:38:50.417597+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "KHaIULP8TYGl30yvHcGbyw=="
-							},
-							"code" : "FileLocator gtResource /"
+							"string" : "[[Building the VISSOFT case study model]]"
 						}
 					]
 				},
@@ -309,7 +354,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-25T18:36:58.5643+02:00"
+						"dateAndTimeString" : "2026-08-26T08:37:51.708187+02:00"
 					}
 				},
 				"editEmail" : {
@@ -320,17 +365,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-25T18:36:58.5643+02:00"
+						"dateAndTimeString" : "2026-08-26T08:37:55.636045+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "BotcZdjSSR+w6WI0JKIiCA=="
+					"uidString" : "y3iY1TAbRnGNTf1Oa5H7dQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# Running example"
+				"string" : "# Preparing the demo"
 			}
 		]
 	},

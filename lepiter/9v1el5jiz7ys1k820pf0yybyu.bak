@@ -1,0 +1,467 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-25T18:37:04.71735+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T08:46:14.669113+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "435seSwVTbWNjb7GIYxDeg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Use the data from the 2016 paper.\nSee the [replication package](https://scg.unibe.ch/research/visualisation-review).\nThe UTF-8 CSV link: [](https://scg.unibe.ch/download/merino/review-vissoft/dataset-utf8.zip)."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T08:39:01.384129+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T08:40:22.521046+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "KyxcjBH5Tqqt8nbI9rKKlw=="
+							},
+							"code" : "csvUrl := 'https://scg.unibe.ch/download/merino/review-vissoft/dataset-utf8.zip'.\r\rchat := GtL gt.\rchat sendMarkdown: 'There is a zipped file containing two CSV files at the following URL: `', csvUrl, '`. Download the contents into the local image directory and summarize the contents.'."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T08:41:06.699811+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T08:41:12.787102+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "/mj5BQQ8TWWFVABgNoRJGg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "The LLM does the following:"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T08:40:40.49222+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T08:41:33.557969+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "urv1N1DdS2u6gX/bNi0Hbw=="
+							},
+							"code" : "| url zipFile destination contents |\nurl := 'https://scg.unibe.ch/download/merino/review-vissoft/dataset-utf8.zip'.\nzipFile := FileLocator imageDirectory / 'dataset-utf8.zip'.\ndestination := FileLocator imageDirectory / 'dataset-utf8'.\ndestination ensureCreateDirectory.\ncontents := ZnClient new get: url.\nzipFile binaryWriteStreamDo: [ :stream | stream nextPutAll: contents ].\nZipArchive extractFrom: zipFile to: destination.\n{ zipFile fullName. zipFile size. destination fullName. (destination children collect: #basename) asArray }"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T08:41:37.252812+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T08:41:45.253629+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "CFmXYObKQWaV6U8ooP5Iqg=="
+							},
+							"code" : "| root files |\nroot := FileLocator imageDirectory / 'dataset-utf8' / 'dataset-utf8'.\nfiles := root allChildren select: [ :each | each isFile and: [ each extension = 'csv' ] ].\nfiles collect: [ :file |\n  | rows headers |\n  rows := CSVParser parseFileWithHeader: file.\n  headers := rows isEmpty ifTrue: [ #() ] ifFalse: [ rows first keys asSortedCollection asArray ].\n  { file basename. file size. rows size. headers } ]"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T08:41:52.990569+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T08:41:53.746822+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "3WKzSnfVRUawPoEl3tb5xw=="
+							},
+							"code" : "| root selected all countValues |\nroot := FileLocator imageDirectory / 'dataset-utf8' / 'dataset-utf8'.\nselected := CSVParser parseFileWithHeader: root / 'dataset-review-vissoft-selected.csv'.\nall := CSVParser parseFileWithHeader: root / 'dataset-review-vissoft-all.csv'.\ncountValues := [ :rows :key | | counts |\n  counts := Dictionary new.\n  rows do: [ :row | | value | value := row at: key ifAbsent: [ nil ]. value ifNotNil: [ counts at: value put: (counts at: value ifAbsent: [ 0 ]) + 1 ] ].\n  (counts associations asSortedCollection: [ :a :b | a value = b value ifTrue: [ a key asString < b key asString ] ifFalse: [ a value > b value ] ]) collect: [ :each | { each key. each value } ] ].\n{ #selectedYears -> (countValues value: selected value: 'Paper Year'). #selectedCategories -> (countValues value: selected value: 'Category'). #selectedTasks -> (countValues value: selected value: 'Task'). #allTypes -> (countValues value: all value: 'Type'). #allYears -> (countValues value: all value: 'Year') }"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-26T08:42:41.006471+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-26T08:42:41.006471+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "jASDNgbISTSWE8GmiCv/VQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Downloaded the 48,968-byte archive and extracted it under:\n\n`/Users/oscar/Desktop/GT/GT-2026-08-25@18h45/dataset-utf8/dataset-utf8/`\n\nIt contains two UTF-8 CSV datasets:\n\n- **`dataset-review-vissoft-all.csv`** — 346 bibliographic records (99,262 bytes), spanning **2002–2015**. It includes title, author positions, venue, type, description, location, date, pages, and BibTeX-related fields. Most frequent types: **N/A (73)**, **Design Study (65)**, **Technique (65)**, and **System (60)**.\n- **`dataset-review-vissoft-selected.csv`** — 65 selected records (81,509 bytes) with richer review annotations: paper metadata plus goal, audience, task, representation, medium, platform, source/license availability, and research category. The largest task groups are **Programming (19)**, **Maintenance (13)**, **Reverse Engineering (13, including one capitalization variant)**, and **Debugging (11)**. Common categories include **History (10)**, **ND (9)**, **TE (9)**, and **Debugging (7)**.\n\nThe selected set concentrates in 2003–2015, with 2010 and 2015 contributing 10 papers each. The archive also contains an extraneous `__MACOSX` directory."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T08:42:35.934613+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T08:42:38.560325+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "1YIwhGrPQeqXC/ukrhmzPw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Then it reports:"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T08:40:44.816009+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T08:40:54.642305+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "HfLPl3fZTf+fHxNCoTmREg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Downloading the dataset"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-25T18:37:12.679794+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-25T18:37:16.064493+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "3k4UGvU2SSycIgy/LGUwKA=="
+				},
+				"code" : "FileLocator imageDirectory"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-25T18:37:54.46311+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-25T18:38:11.537825+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "62UeIJbVQwyVlvC22qxmZw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Let's copy the replication to a local folder."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-25T18:37:48.960175+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-25T18:39:19.541333+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "KHaIULP8TYGl30yvHcGbyw=="
+				},
+				"code" : "FileLocator gtResource / 'onierstrasz' / 'gt-vissoft2026' / 'data'"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2026-08-26T08:38:16.871523+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2026-08-26T08:44:40.678928+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Downloading the VISSOFT 2016 Dataset"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "16032e42-484a-4541-84b5-df3f829695a6"
+	}
+}

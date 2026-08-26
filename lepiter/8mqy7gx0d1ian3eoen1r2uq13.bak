@@ -312,12 +312,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-08-26T08:39:56.345956+02:00"
+			"dateAndTimeString" : "2026-08-21T15:59:41.344306+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "First exploration of the Actionable Visualization replication package"
+		"title" : "Exploring the Actionable Visualization replication package"
 	},
 	"uid" : {
 		"__type" : "uuid",
