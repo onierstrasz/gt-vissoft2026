@@ -54,6 +54,15 @@ VSStudyExamples >> selectedDesignStudyPapers [
 ]
 
 { #category : 'examples' }
+VSStudyExamples >> selectedPaperTopics [
+	<gtExample>
+	| papers |
+	papers := self selectedPapersAreNumberedAndSortedById collect: #value.
+	self assert: (papers allSatisfy: [ :aPaper | aPaper topicName = (aPaper selectedRecord at: 'Topic' ifAbsent: [ nil ]) ]).
+	^ papers
+]
+
+{ #category : 'examples' }
 VSStudyExamples >> selectedPapersAreNumberedAndSortedById [
 	<gtExample>
 	| aStudy papers |

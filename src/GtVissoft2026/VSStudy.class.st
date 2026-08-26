@@ -61,7 +61,7 @@ VSStudy >> gtPapersFor: aView [
 		send: [ :anAssociation | anAssociation value ]
 ]
 
-{ #category : 'views' }
+{ #category : 'gt-views' }
 VSStudy >> gtSelectedPapersFor: aView [
 	<gtView>
 	^ aView columnedList
@@ -73,6 +73,7 @@ VSStudy >> gtSelectedPapersFor: aView [
 		column: 'ID' text: [ :anAssociation | anAssociation value id ] weight: 0.4;
 		column: 'Title' text: [ :anAssociation | anAssociation value record at: 'Title' ] weight: 4;
 		column: 'Type' text: [ :anAssociation | anAssociation value record at: 'Type' ] weight: 0.8;
+		column: 'Topic' text: [ :anAssociation | anAssociation value topicName ifNil: [ '' ] ] weight: 1;
 		column: '# of Authors' text: [ :anAssociation | anAssociation value authorNames size ] weight: 0.6;
 		column: 'Year' text: [ :anAssociation | anAssociation value record at: 'Year' ] weight: 0.5;
 		column: 'First author' text: [ :anAssociation | anAssociation value authorNames at: 1 ifAbsent: [ '' ] ] weight: 1.5;

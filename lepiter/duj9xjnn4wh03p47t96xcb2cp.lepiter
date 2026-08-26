@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-26T08:48:25.046579+02:00"
+						"dateAndTimeString" : "2026-08-26T18:04:10.733465+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,7 +29,78 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-26T08:48:26.905089+02:00"
+						"dateAndTimeString" : "2026-08-26T18:04:10.733465+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UyoJ92zcSMCZv5tDcDzsmw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Now we have a basic model and we would like to create some simple visualizations."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T18:04:13.526166+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T18:04:23.817922+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "OVRrON4UT0OXVGPG0/L1Jg=="
+				},
+				"code" : "VSStudyExamples new study"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T17:59:00.588668+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T18:04:10.735631+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +110,112 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "to do ...."
+				"string" : "We start with a graph of authors."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T17:59:34.460785+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T18:01:38.893727+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UgmYbTIFSCiQuHFcq8kdNg=="
+				},
+				"code" : "chat := GtL gt\r\t\tmarkdownResponse;\r\t\taddResponseFormatForMagritte: GtLCodeTransformations\r\t\t\tnamed: 'CodeTransformations';\r\t\tgtPageExplanation: 'Tutorial: molding CSV data into an explainable system';\r\t\tgtPageExplanation: 'Molding CSV data — actions, queries and visualizations'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T18:01:43.567455+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T18:15:59.458979+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "A0BUPuNSRjuCloqEkaPWcQ=="
+				},
+				"code" : "chat sendMarkdown: 'Create a Mondrian view in VSSTudy with a force-based layout of papers and their authors. Represent each author as a light blue square with authors initials as the label. Hovering over the author box should show the full author name. Represent papers as light pink circles with their size proportional to the number of authors. Hovering over a paper will show its title. Clicking on a node will navigate to the paper or author.'"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T18:22:56.105335+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T18:24:32.673745+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "QhfGniGmTbqYA5HF6qY4cg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "WIth this prompt the LLM seems to still search too much instead of following the instructions from the tutorial. Perhaps we need to be more explicit about what steps it should take, and we can start with a smaller graph of an author with co-authors and their papers, or papers with authors and their papers."
 			}
 		]
 	},
@@ -62,12 +238,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-08-26T08:48:44.358945+02:00"
+			"dateAndTimeString" : "2026-08-26T17:58:47.329154+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Producing visualizations ... TO DO"
+		"title" : "Producing visualizations"
 	},
 	"uid" : {
 		"__type" : "uuid",
