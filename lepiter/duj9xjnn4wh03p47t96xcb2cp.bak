@@ -250,6 +250,40 @@
 					"uidString" : "gUmh6/5qSPW3fl1nCLzYwg=="
 				},
 				"code" : "chat sendMarkdown: 'Fix the author label to be two (or more) letters consisting of the first letter of the given name followed by the first letter of the surname, without periods.'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T18:46:42.193094+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T18:46:57.001135+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "r1b282rSSyO5TGojcyiB2w=="
+				},
+				"code" : ""
 			}
 		]
 	},
