@@ -30,6 +30,19 @@ VSPaperExamples >> nonDesignStudyHasNoStudyDetails [
 ]
 
 { #category : 'examples' }
+VSPaperExamples >> paperAuthorNamesFollowAuthorAttributeOrder [
+	<gtExample>
+	| aPaper |
+	aPaper := self paperPrintsItsTitle.
+	self assert: aPaper authorNames first equals: 'Daniel, D.T.'.
+	self assert: (aPaper authorNames at: 2) equals: 'Wuchner, E.'.
+	self assert: (aPaper authorNames at: 3) equals: 'Sokolov, K.'.
+	self assert: (aPaper authorNames at: 4) equals: 'Stal, M.'.
+	self assert: (aPaper authorNames at: 5) equals: 'Liggesmeyer, P.'.
+	^ aPaper
+]
+
+{ #category : 'examples' }
 VSPaperExamples >> paperAuthorsAreLinkedToAuthorInstances [
 	<gtExample>
 	| aPaper authors |

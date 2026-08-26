@@ -1501,14 +1501,85 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-26T17:43:33.429312+02:00"
+									"dateAndTimeString" : "2026-08-26T17:44:10.917397+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "N7WXD+vLQA27jtA+L2y4bA=="
 							},
-							"code" : "chat sendMarkdown: 'Fix the `gtAuthorsFor:` views so they '"
+							"code" : "chat sendMarkdown: 'Fix the `gtAuthorsFor:` views so they take up less space for the Author names.'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T17:54:45.274675+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T17:55:27.632305+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "7SsE7GdWRkuSXQWSmpTjwQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Something is wrong with the  order of authors in Authors view of a Paper. Exploring the code, we see that "
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T17:52:43.517839+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T17:54:35.309957+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "/DChXHDZT1+vycSpMNqMgQ=="
+							},
+							"code" : "chat sendMarkdown: 'The VSPaper authorNames method does not list the authors in the correct order. Fix it so that the authorNames list reflects the order of the AUthor attributes, namely \"First Author\" followed by \"Second Author\" and so on. '"
 						}
 					]
 				},

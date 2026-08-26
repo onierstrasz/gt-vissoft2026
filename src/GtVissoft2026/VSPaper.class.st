@@ -13,12 +13,24 @@ Class {
 
 { #category : 'accessing' }
 VSPaper >> authorNames [
-	| names |
-	names := (record keys
-		select: [ :each | each endsWith: ' Author' ])
-		collect: [ :each | (record at: each) copyWithout: $" ].
-	names := names collect: [ :each | each trimBoth ].
-	^ names select: [ :each | each isNotEmpty ]
+	| authorKeys |
+	authorKeys := #(
+		'First Author'
+		'Second Author'
+		'Third Author'
+		'Fourth Author'
+		'Fifth Author'
+		'Sixth Author'
+		'Seven Author'
+		'Eighth Author'
+		'Nineth Author'
+		'Tenth Author'
+		'Eleventh Author'
+		'Twelfth Author').
+	^ (authorKeys collect: [ :aKey |
+		(record at: aKey ifAbsent: [ '' ]) copyWithout: $" ])
+		collect: [ :aName | aName trimBoth ]
+		thenSelect: [ :aName | aName isNotEmpty ]
 ]
 
 { #category : 'accessing' }
