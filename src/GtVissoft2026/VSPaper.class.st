@@ -33,9 +33,57 @@ VSPaper >> authorNames [
 		thenSelect: [ :aName | aName isNotEmpty ]
 ]
 
+{ #category : 'visualization' }
+VSPaper >> authorPaperMondrian: aMondrian [
+	"Build a three-level graph: this paper, its authors, and all papers by those authors."
+	| authors papers |
+	authors := self authors.
+	papers := ({ self } , (authors flatCollect: #papers)) asSet asOrderedCollection.
+
+	aMondrian nodes
+		stencil: [ :aPaper |
+			BlTextElement new
+				text: '' asRopedText;
+				background: (Color r: 1.0 g: 0.78 b: 0.82);
+				border: (BlBorder paint: Color gray);
+				geometry: BlEllipseGeometry new;
+				size: (30 + (aPaper authors size * 8)) asPoint;
+				aptitude: (BrGlamorousWithLabelTooltipAptitude text: (aPaper record at: 'Title'));
+				when: BlClickEvent do: [ :anEvent | anEvent currentTarget phlow spawnObject: aPaper ] ];
+		with: papers.
+	aMondrian nodes
+		stencil: [ :anAuthor |
+			BlTextElement new
+				text: (self initialsForAuthor: anAuthor) asRopedText;
+				background: (Color r: 0.68 g: 0.85 b: 0.90);
+				border: (BlBorder paint: Color gray);
+				geometry: BlRectangleGeometry new;
+				size: (30 + (anAuthor papers size * 8)) asPoint;
+				aptitude: (BrGlamorousWithLabelTooltipAptitude text: anAuthor name);
+				when: BlClickEvent do: [ :anEvent | anEvent currentTarget phlow spawnObject: anAuthor ] ];
+		with: authors.
+	aMondrian edges
+		connect: papers
+		from: [ :aPaper | aPaper ]
+		toAll: #authors.
+	aMondrian layout custom: (GtGraphForceBasedLayout new
+		charge: -2000;
+		length: 200)
+]
+
 { #category : 'accessing' }
 VSPaper >> authors [
 	^ self authorNames collect: [ :eachName | study authorNamed: eachName ]
+]
+
+{ #category : 'visualization' }
+VSPaper >> gtAuthorPaperGraphFor: aView [
+	<gtView>
+	^ aView mondrian
+		title: 'Author-paper graph';
+		priority: 10;
+		painting: [ :aMondrian | self authorPaperMondrian: aMondrian ];
+		actionUpdateButton
 ]
 
 { #category : 'gt-views' }
@@ -99,6 +147,18 @@ VSPaper >> gtSummaryFor: aView [
 { #category : 'accessing' }
 VSPaper >> id [
 	^ record at: 'ID'
+]
+
+{ #category : 'visualization' }
+VSPaper >> initialsForAuthor: anAuthor [
+	"Answer the first letter of the given name followed by the first letter of the surname, without periods."
+	| nameParts surname givenNames givenInitial surnameInitial |
+	nameParts := anAuthor name substrings: ','.
+	surname := nameParts first trimBoth.
+	givenNames := nameParts allButFirst joinUsing: ' '.
+	givenInitial := (givenNames select: #isLetter) first asString.
+	surnameInitial := (surname select: #isLetter) first asString.
+	^ givenInitial , surnameInitial
 ]
 
 { #category : 'testing' }

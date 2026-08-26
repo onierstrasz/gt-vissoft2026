@@ -147,40 +147,6 @@
 				"code" : "chat := GtL gt\r\t\tmarkdownResponse;\r\t\tgtPageExplanation: 'Molding CSV data — actions, queries and visualizations'"
 			},
 			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-26T18:01:43.567455+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-26T18:15:59.458979+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "A0BUPuNSRjuCloqEkaPWcQ=="
-				},
-				"code" : "chat sendMarkdown: 'Create a Mondrian view in VSSTudy with a force-based layout of papers and their authors. Represent each author as a light blue square with authors initials as the label. Hovering over the author box should show the full author name. Represent papers as light pink circles with their size proportional to the number of authors. Hovering over a paper will show its title. Clicking on a node will navigate to the paper or author.'"
-			},
-			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -194,7 +160,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-26T18:22:56.105335+02:00"
+						"dateAndTimeString" : "2026-08-26T18:36:36.549979+02:00"
 					}
 				},
 				"editEmail" : {
@@ -205,17 +171,119 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-26T18:24:32.673745+02:00"
+						"dateAndTimeString" : "2026-08-26T18:36:53.805584+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "QhfGniGmTbqYA5HF6qY4cg=="
+					"uidString" : "DYLm5dP4SEChbx6lPsVZ8A=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "WIth this prompt the LLM seems to still search too much instead of following the instructions from the tutorial. Perhaps we need to be more explicit about what steps it should take, and we can start with a smaller graph of an author with co-authors and their papers, or papers with authors and their papers."
+				"string" : "Start with something simple — paper with authors and their papers."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T18:37:01.935628+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T18:39:21.408545+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "o12k5E5pSueoVGzjcUBolA=="
+				},
+				"code" : "chat sendMarkdown: 'Following the example given in the page `Molding CSV data — actions, queries and visualizations`, create a Mondrian view in VSPaper with a force-based layout of a three-level graph of a paper, its authors, and their papers. Represent each author as a light blue square with size proportional to the number of authored papers, and with authors initials as the label. Hovering over the author box should show the full author name. Represent papers as light pink circles with their size proportional to the number of authors. Hovering over a paper will show its title. Clicking on a node will navigate to the paper or author.'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T18:42:00.393766+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T18:43:24.25742+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "gUmh6/5qSPW3fl1nCLzYwg=="
+				},
+				"code" : "chat sendMarkdown: 'Fix the author label to be two (or more) letters consisting of the first letter of the given name followed by the first letter of the surname, without periods.'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T18:46:42.193094+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-26T18:46:57.001135+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "r1b282rSSyO5TGojcyiB2w=="
+				},
+				"code" : ""
 			}
 		]
 	},

@@ -7,6 +7,16 @@ Class {
 }
 
 { #category : 'examples' }
+VSPaperExamples >> authorGraphLabelsUseGivenThenSurnameInitial [
+	<gtExample>
+	| aPaper anAuthor |
+	aPaper := self paperAuthorsAreLinkedToAuthorInstances.
+	anAuthor := aPaper authors detect: [ :each | each name = 'Daniel, D.T.' ].
+	self assert: (aPaper initialsForAuthor: anAuthor) equals: 'DD'.
+	^ anAuthor
+]
+
+{ #category : 'examples' }
 VSPaperExamples >> designStudyReceivesSelectedRecord [
 	<gtExample>
 	| aStudy designStudy |
@@ -40,6 +50,19 @@ VSPaperExamples >> paperAuthorNamesFollowAuthorAttributeOrder [
 	self assert: (aPaper authorNames at: 4) equals: 'Stal, M.'.
 	self assert: (aPaper authorNames at: 5) equals: 'Liggesmeyer, P.'.
 	^ aPaper
+]
+
+{ #category : 'examples' }
+VSPaperExamples >> paperAuthorPaperGraph [
+	<gtExample>
+	<return: #GtMondrian>
+	| aPaper aGraph |
+	aPaper := self paperAuthorsAreLinkedToAuthorInstances.
+	aGraph := GtMondrian new.
+	aPaper authorPaperMondrian: aGraph.
+	self assert: aGraph topStep root graph nodeChildren size equals:
+		(({ aPaper } , (aPaper authors flatCollect: #papers)) asSet size + aPaper authors size).
+	^ aGraph
 ]
 
 { #category : 'examples' }
