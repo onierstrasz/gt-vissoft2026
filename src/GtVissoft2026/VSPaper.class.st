@@ -38,34 +38,37 @@ VSPaper >> authors [
 	^ self authorNames collect: [ :eachName | study authorNamed: eachName ]
 ]
 
-{ #category : 'views' }
+{ #category : 'gt-views' }
 VSPaper >> gtAuthorsFor: aView [
 	<gtView>
 	^ aView columnedList
 		title: 'Authors';
+		priority: 1;
 		items: [ self authors ];
 		column: 'Author' text: [ :anAuthor | anAuthor name ] weight: 2;
 		column: '# of papers' text: [ :anAuthor | anAuthor papers size ] weight: 0.6;
 		send: [ :anAuthor | anAuthor ]
 ]
 
-{ #category : 'views' }
+{ #category : 'gt-views' }
 VSPaper >> gtStudyDetailsFor: aView [
 	<gtView>
 	selectedRecord ifNil: [ ^ aView empty ].
 	^ aView columnedList
 		title: 'Study Details';
+		priority: 3;
 		items: [ selectedRecord associations sorted: [ :left :right | left key <= right key ] ];
 		column: 'Attribute' text: [ :anAssociation | anAssociation key ] weight: 1;
 		column: 'Value' text: [ :anAssociation | anAssociation value ] weight: 4;
 		send: [ :anAssociation | anAssociation value ]
 ]
 
-{ #category : 'views' }
+{ #category : 'gt-views' }
 VSPaper >> gtSummaryFor: aView [
 	<gtView>
 	^ aView columnedList
 		title: 'Summary';
+		priority: 2;
 		items: [
 			| authorKeys otherKeys orderedKeys |
 			authorKeys := #(

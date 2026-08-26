@@ -137,14 +137,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-26T18:01:38.893727+02:00"
+						"dateAndTimeString" : "2026-08-26T18:32:29.677345+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "UgmYbTIFSCiQuHFcq8kdNg=="
 				},
-				"code" : "chat := GtL gt\r\t\tmarkdownResponse;\r\t\taddResponseFormatForMagritte: GtLCodeTransformations\r\t\t\tnamed: 'CodeTransformations';\r\t\tgtPageExplanation: 'Tutorial: molding CSV data into an explainable system';\r\t\tgtPageExplanation: 'Molding CSV data — actions, queries and visualizations'"
+				"code" : "chat := GtL gt\r\t\tmarkdownResponse;\r\t\tgtPageExplanation: 'Molding CSV data — actions, queries and visualizations'"
 			},
 			{
 				"__type" : "pharoSnippet",

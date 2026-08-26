@@ -1725,6 +1725,74 @@
 							"code" : "chat sendMarkdown: 'Add a Topic column to the Selected Papers view of VSStudy, immediately following the Type column.' "
 						},
 						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T18:32:55.48976+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T18:33:36.879856+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "lTWN5FQrSzWrkbIjRdv+vA=="
+							},
+							"code" : "chat sendMarkdown: 'Add priorities to the VSStudy views so that Papers appear first, followed by Selected Papers and Authors'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T18:34:41.258017+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-26T18:35:13.593897+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "X3Sm8yEpTleWR06LLbkemg=="
+							},
+							"code" : "chat sendMarkdown: 'Add priorities to the VSPaper views so that Authors appear first, followed by Summary and Study Details'"
+						},
+						{
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",

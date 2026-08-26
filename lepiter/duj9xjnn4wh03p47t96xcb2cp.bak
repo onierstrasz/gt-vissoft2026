@@ -205,7 +205,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-26T18:23:55.919048+02:00"
+						"dateAndTimeString" : "2026-08-26T18:24:32.673745+02:00"
 					}
 				},
 				"uid" : {
@@ -215,7 +215,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "WIth this prompt the LLM seems to still search too much instead of following the instructions from the tutorial. Perhaps we need to be more explicit about what steps it should take, and we can start with a smaller graph of an author with co-authors and their papers"
+				"string" : "WIth this prompt the LLM seems to still search too much instead of following the instructions from the tutorial. Perhaps we need to be more explicit about what steps it should take, and we can start with a smaller graph of an author with co-authors and their papers, or papers with authors and their papers."
 			}
 		]
 	},

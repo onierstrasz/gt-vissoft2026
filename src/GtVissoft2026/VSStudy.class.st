@@ -31,22 +31,24 @@ VSStudy >> authors [
 	^ authors
 ]
 
-{ #category : 'views' }
+{ #category : 'gt-views' }
 VSStudy >> gtAuthorsFor: aView [
 	<gtView>
 	^ aView columnedList
 		title: 'Authors';
+		priority: 3;
 		items: [ self authors values asSortedCollection: [ :anAuthor :anotherAuthor | anAuthor name < anotherAuthor name ] ];
 		column: 'Author' text: [ :anAuthor | anAuthor name ] weight: 2;
 		column: '# of papers' text: [ :anAuthor | anAuthor papers size ] weight: 0.6;
 		send: [ :anAuthor | anAuthor ]
 ]
 
-{ #category : 'views' }
+{ #category : 'gt-views' }
 VSStudy >> gtPapersFor: aView [
 	<gtView>
 	^ aView columnedList
 		title: 'Papers';
+		priority: 1;
 		items: [ (allPapers values
 			sorted: [ :aPaper :anotherPaper | aPaper id asNumber < anotherPaper id asNumber ])
 			withIndexCollect: [ :aPaper :anIndex | anIndex -> aPaper ] ];
@@ -66,6 +68,7 @@ VSStudy >> gtSelectedPapersFor: aView [
 	<gtView>
 	^ aView columnedList
 		title: 'Selected Papers';
+		priority: 2;
 		items: [ ((allPapers values select: [ :aPaper | aPaper isDesignStudy and: [ aPaper selectedRecord notNil ] ])
 			sorted: [ :aPaper :anotherPaper | aPaper id asNumber < anotherPaper id asNumber ])
 			withIndexCollect: [ :aPaper :anIndex | anIndex -> aPaper ] ];
