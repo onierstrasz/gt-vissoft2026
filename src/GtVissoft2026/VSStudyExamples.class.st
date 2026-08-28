@@ -7,6 +7,39 @@ Class {
 }
 
 { #category : 'examples' }
+VSStudyExamples >> authorPaperGraph [
+	<gtExample>
+	<return: #GtMondrian>
+	| aStudy aGraph designStudyPapers designStudyAuthors |
+	aStudy := VSStudy new.
+	designStudyPapers := aStudy allPapers values select: #isDesignStudy.
+	designStudyAuthors := (designStudyPapers flatCollect: #authors) asIdentitySet.
+	aGraph := GtMondrian new.
+	aStudy authorPaperGraphIn: aGraph.
+	self assert: aGraph topStep root graph nodeChildren size equals: designStudyPapers size + designStudyAuthors size.
+	self assert: aGraph topStep root graph edgeChildren size equals: (designStudyAuthors sum: [ :anAuthor | anAuthor papers count: [ :aPaper | designStudyPapers includes: aPaper ] ]).
+	^ aGraph
+]
+
+{ #category : 'examples' }
+VSStudyExamples >> authorPaperGraphContainsOnlyDesignStudyPapers [
+	<gtExample>
+	<return: #GtMondrian>
+	| aStudy aGraph paperModels authorModels |
+	aStudy := VSStudy new.
+	aGraph := self authorPaperGraph.
+	paperModels := aGraph nodeElements
+		collect: [ :each | each graph model ]
+		thenSelect: [ :each | each isKindOf: VSPaper ].
+	authorModels := aGraph nodeElements
+		collect: [ :each | each graph model ]
+		thenSelect: [ :each | each isKindOf: VSAuthor ].
+	self assert: (paperModels allSatisfy: #isDesignStudy).
+	self assert: (authorModels allSatisfy: [ :anAuthor | anAuthor papers anySatisfy: #isDesignStudy ]).
+	^ aGraph
+]
+
+{ #category : 'examples' }
 VSStudyExamples >> authorsAreListedByName [
 	<gtExample>
 	| aStudy authors |
@@ -30,6 +63,20 @@ VSStudyExamples >> paperAuthorCounts [
 ]
 
 { #category : 'examples' }
+VSStudyExamples >> paperGroupReachableAuthorPaperGraph [
+	<gtExample>
+	<return: #GtMondrian>
+	| aGroup component aGraph |
+	aGroup := self study papersMatchingTitle: 'polyptychon'.
+	component := aGroup reachablePaperAuthorComponent.
+	aGraph := GtMondrian new.
+	aGroup reachableAuthorPaperGraphIn: aGraph.
+	self assert: aGraph topStep root graph nodeChildren size equals: component key size + component value size.
+	self assert: aGraph topStep root graph edgeChildren size equals: (component value sum: [ :anAuthor | anAuthor papers count: [ :aPaper | component key includes: aPaper ] ]).
+	^ aGraph
+]
+
+{ #category : 'examples' }
 VSStudyExamples >> papersAreNumberedAndSortedById [
 	<gtExample>
 	| aStudy papers |
@@ -40,6 +87,30 @@ VSStudyExamples >> papersAreNumberedAndSortedById [
 	self assert: papers size equals: aStudy allPapers size.
 	self assert: (papers withIndexCollect: [ :aPaper :anIndex | anIndex -> aPaper ]) first key equals: 1.
 	^ papers
+]
+
+{ #category : 'examples' }
+VSStudyExamples >> papersMatchingTitleReturnsAPaperGroup [
+	<gtExample>
+	| aStudy matches |
+	aStudy := self study.
+	matches := aStudy papersMatchingTitle: 'polyptychon'.
+	self assert: matches class equals: VSPaperGroup.
+	self assert: matches size equals: 1.
+	self assert: matches first id equals: '305'.
+	^ matches
+]
+
+{ #category : 'examples' }
+VSStudyExamples >> papersMatchingTitleReturnsPapersContainingTheQuery [
+	<gtExample>
+	| aStudy matches |
+	aStudy := self study.
+	matches := aStudy papersMatchingTitle: 'polyptychon'.
+	self assert: matches size equals: 1.
+	self assert: matches first id equals: '305'.
+	self assert: (matches first record at: 'Title') equals: 'Polyptychon: A Hierarchically-Constrained Classified Dependencies Visualization'.
+	^ matches
 ]
 
 { #category : 'examples' }

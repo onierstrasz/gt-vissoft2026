@@ -65,22 +65,6 @@ VSPaperExamples >> paperAuthorNamesFollowAuthorAttributeOrder [
 ]
 
 { #category : 'examples' }
-VSPaperExamples >> paperAuthorPaperGraph [
-	<gtExample>
-	<return: #GtMondrian>
-	| aPaper aGraph authors papers expectedModels |
-	aPaper := self paperAuthorsAreLinkedToAuthorInstances.
-	aGraph := GtMondrian new.
-	aPaper authorPaperGraphIn: aGraph.
-	authors := aPaper authors.
-	papers := (authors flatCollect: #papers) asSet.
-	expectedModels := ({ aPaper } , authors , papers asArray) asSet.
-	self assert: aGraph topStep root graph nodeChildren size equals: expectedModels size.
-	self assert: aGraph topStep root graph edgeChildren size equals: authors size + (authors sum: [ :anAuthor | anAuthor papers size ]).
-	^ aGraph
-]
-
-{ #category : 'examples' }
 VSPaperExamples >> paperAuthorsAreLinkedToAuthorInstances [
 	<gtExample>
 	| aPaper authors |
@@ -90,6 +74,17 @@ VSPaperExamples >> paperAuthorsAreLinkedToAuthorInstances [
 	self assert: (authors allSatisfy: [ :anAuthor | anAuthor isKindOf: VSAuthor ]).
 	self assert: (authors allSatisfy: [ :anAuthor | anAuthor papers includes: aPaper ]).
 	self assert: (authors allSatisfy: [ :anAuthor | anAuthor papers size > 0 ]).
+	^ aPaper
+]
+
+{ #category : 'examples' }
+VSPaperExamples >> paperGoogleScholarSearchUrlUsesItsTitle [
+	<gtExample>
+	| aPaper |
+	aPaper := self designStudyReceivesSelectedRecord.
+	self
+		assert: aPaper googleScholarSearchUrl
+		equals: 'https://scholar.google.com/scholar?hl=en&q=' , (aPaper record at: 'Title') urlEncoded.
 	^ aPaper
 ]
 

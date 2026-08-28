@@ -26,9 +26,68 @@ VSStudy >> authorNamed: aName [
 			yourself ]
 ]
 
+{ #category : 'visualizing' }
+VSStudy >> authorPaperGraphIn: aMondrian [
+	"Visualize only Design Study papers and authors of those papers."
+	| designStudyPapers designStudyAuthors |
+	designStudyPapers := self allPapers values select: #isDesignStudy.
+	designStudyAuthors := (designStudyPapers flatCollect: #authors) asIdentitySet.
+	aMondrian nodes
+		stencil: [ :aModel | self authorPaperNodeFor: aModel ];
+		with: (designStudyPapers asArray , designStudyAuthors asArray).
+	designStudyAuthors do: [ :anAuthor |
+		aMondrian edges
+			connect: (anAuthor papers select: [ :aPaper | designStudyPapers includes: aPaper ])
+			from: [ :aPaper | anAuthor ]
+			to: [ :aPaper | aPaper ] ].
+	aMondrian layout custom: (GtGraphForceBasedLayout new
+		charge: -2000;
+		length: 200)
+]
+
+{ #category : 'visualizing' }
+VSStudy >> authorPaperNodeFor: aModel [
+	| isAuthor size tooltipText element |
+	isAuthor := aModel isKindOf: VSAuthor.
+	size := isAuthor
+		ifTrue: [ 25 + (aModel papers size * 8) ]
+		ifFalse: [ 25 + (aModel authors size * 8) ].
+	tooltipText := isAuthor
+		ifTrue: [ aModel name ]
+		ifFalse: [ aModel record at: 'Title' ].
+	element := BlElement new
+		background: (isAuthor ifTrue: [ Color lightBlue ] ifFalse: [ Color paleRed ]);
+		geometry: (isAuthor ifTrue: [ BlRectangleGeometry new ] ifFalse: [ BlEllipseGeometry new ]);
+		size: size @ size;
+		addAptitude: (BrGlamorousWithLabelTooltipAptitude text: tooltipText);
+		when: BlClickEvent do: [ :anEvent | anEvent currentTarget phlow spawnObject: aModel ];
+		yourself.
+	isAuthor
+		ifTrue: [
+			element
+				layout: BlFrameLayout new;
+				addChild: (BlTextElement new
+					text: (self initialsForAuthor: aModel) asRopedText;
+					constraintsDo: [ :aConstraints |
+						aConstraints frame horizontal alignCenter.
+						aConstraints frame vertical alignCenter ]) ]
+		ifFalse: [ aModel isDesignStudy ifTrue: [ element border: (BlBorder paint: Color red width: 2) ] ].
+	^ element
+]
+
 { #category : 'accessing' }
 VSStudy >> authors [
 	^ authors
+]
+
+{ #category : 'visualizing' }
+VSStudy >> gtAuthorPaperGraphFor: aView [
+	<gtView>
+	^ aView mondrian
+		title: 'Design study author papers graph';
+		priority: 10;
+		painting: [ :aMondrian | self authorPaperGraphIn: aMondrian ];
+		actionUpdateButton
 ]
 
 { #category : 'gt views' }
@@ -87,10 +146,41 @@ VSStudy >> gtSelectedPapersFor: aView [
 		actionUpdateButton
 ]
 
+{ #category : 'gt-search' }
+VSStudy >> gtSpotterForPaperTitles: aSearch [
+	<gtSearch>
+	^ aSearch list
+		title: 'Paper titles';
+		priority: 10;
+		items: [ self allPapers values ];
+		itemsLimit: Float infinity;
+		itemName: [ :aPaper | aPaper record at: 'Title' ];
+		sendCategory: [ :aCategory :aStep :thisSearch |
+			VSPaperGroup withAll: aCategory items contents asArray ];
+		filterBySubstring
+]
+
 { #category : 'initialization' }
 VSStudy >> initialize [
 	super initialize.
 	self loadFromResources
+]
+
+{ #category : 'visualizing' }
+VSStudy >> initialsForAuthor: anAuthor [
+	"Answer initials for author names formatted as 'Surname, Given names'."
+	| nameParts surname givenNames givenLetters surnameLetters |
+	nameParts := anAuthor name substrings: ','.
+	surname := nameParts first ifNil: [ '' ].
+	givenNames := nameParts allButFirst joinUsing: ' '.
+	givenLetters := givenNames select: #isLetter.
+	surnameLetters := surname select: #isLetter.
+	^ (givenLetters
+		ifEmpty: [ '' ]
+		ifNotEmpty: [ givenLetters first asString ])
+		, (surnameLetters
+			ifEmpty: [ '' ]
+			ifNotEmpty: [ surnameLetters first asString ])
 ]
 
 { #category : 'initialization' }
@@ -121,6 +211,15 @@ VSStudy >> loadFromResources [
 { #category : 'accessing' }
 VSStudy >> paperAt: anId [
 	^ allPapers at: anId
+]
+
+{ #category : 'searching' }
+VSStudy >> papersMatchingTitle: aQueryString [
+	| query |
+	query := aQueryString asLowercase.
+	^ VSPaperGroup withAll: ((allPapers values select: [ :aPaper |
+		(aPaper record at: 'Title') asLowercase includesSubstring: query ])
+		sorted: [ :aPaper :anotherPaper | aPaper id asNumber < anotherPaper id asNumber ])
 ]
 
 { #category : 'accessing' }

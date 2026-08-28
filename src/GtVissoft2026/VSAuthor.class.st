@@ -92,7 +92,7 @@ VSAuthor >> gtReachableAuthorPaperGraphFor: aView [
 	<gtView>
 	^ aView mondrian
 		title: 'Reachable author papers graph';
-		priority: 10;
+		priority: 51;
 		painting: [ :aMondrian | self reachableAuthorPaperGraphIn: aMondrian ];
 		actionUpdateButton
 ]

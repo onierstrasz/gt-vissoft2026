@@ -34,21 +34,6 @@ VSPaper >> authorNames [
 ]
 
 { #category : 'visualizing' }
-VSPaper >> authorPaperGraphIn: aMondrian [
-	"Build a three-level graph: this paper, its authors, and each author's papers."
-	| authors papers |
-	authors := self authors asIdentitySet.
-	papers := (authors flatCollect: #papers) asIdentitySet.
-	papers add: self.
-	self
-		authorPaperGraphIn: aMondrian
-		papers: papers
-		authors: authors
-		startingPaper: self
-		connectStartingPaper: true
-]
-
-{ #category : 'visualizing' }
 VSPaper >> authorPaperGraphIn: aMondrian papers: papers authors: authors startingPaper: aStartingPaper connectStartingPaper: shouldConnectStartingPaper [
 	"Render a paper/author graph using the supplied paper and author collections."
 	aMondrian nodes
@@ -115,14 +100,9 @@ VSPaper >> authors [
 	^ self authorNames collect: [ :eachName | study authorNamed: eachName ]
 ]
 
-{ #category : 'visualizing' }
-VSPaper >> gtAuthorPaperGraphFor: aView [
-	<gtView>
-	^ aView mondrian
-		title: 'Author papers graph';
-		priority: 10;
-		painting: [ :aMondrian | self authorPaperGraphIn: aMondrian ];
-		actionUpdateButton
+{ #category : 'accessing' }
+VSPaper >> googleScholarSearchUrl [
+	^ 'https://scholar.google.com/scholar?hl=en&q=' , (record at: 'Title') urlEncoded
 ]
 
 { #category : 'gt views' }
@@ -136,6 +116,15 @@ VSPaper >> gtAuthorsFor: aView [
 		column: '# of papers' text: [ :anAuthor | anAuthor papers size ] weight: 0.6;
 		send: [ :anAuthor | anAuthor ];
 		actionUpdateButton
+]
+
+{ #category : 'gt-actions' }
+VSPaper >> gtGoogleScholarSearchFor: anAction [
+	<gtAction>
+	^ anAction button
+		icon: BrGlamorousVectorIcons web;
+		tooltip: 'Search title in Google Scholar';
+		action: [ :aButton | WebBrowser openOn: self googleScholarSearchUrl ]
 ]
 
 { #category : 'visualizing' }
