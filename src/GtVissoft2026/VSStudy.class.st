@@ -31,7 +31,7 @@ VSStudy >> authors [
 	^ authors
 ]
 
-{ #category : 'gt-views' }
+{ #category : 'gt views' }
 VSStudy >> gtAuthorsFor: aView [
 	<gtView>
 	^ aView columnedList
@@ -40,10 +40,11 @@ VSStudy >> gtAuthorsFor: aView [
 		items: [ self authors values asSortedCollection: [ :anAuthor :anotherAuthor | anAuthor name < anotherAuthor name ] ];
 		column: 'Author' text: [ :anAuthor | anAuthor name ] weight: 2;
 		column: '# of papers' text: [ :anAuthor | anAuthor papers size ] weight: 0.6;
-		send: [ :anAuthor | anAuthor ]
+		send: [ :anAuthor | anAuthor ];
+		actionUpdateButton
 ]
 
-{ #category : 'gt-views' }
+{ #category : 'gt views' }
 VSStudy >> gtPapersFor: aView [
 	<gtView>
 	^ aView columnedList
@@ -60,10 +61,11 @@ VSStudy >> gtPapersFor: aView [
 		column: 'Year' text: [ :anAssociation | anAssociation value record at: 'Year' ] weight: 0.5;
 		column: 'First author' text: [ :anAssociation | anAssociation value authorNames at: 1 ifAbsent: [ '' ] ] weight: 1.5;
 		column: 'Second author' text: [ :anAssociation | anAssociation value authorNames at: 2 ifAbsent: [ '' ] ] weight: 1.5;
-		send: [ :anAssociation | anAssociation value ]
+		send: [ :anAssociation | anAssociation value ];
+		actionUpdateButton
 ]
 
-{ #category : 'gt-views' }
+{ #category : 'gt views' }
 VSStudy >> gtSelectedPapersFor: aView [
 	<gtView>
 	^ aView columnedList
@@ -81,7 +83,8 @@ VSStudy >> gtSelectedPapersFor: aView [
 		column: 'Year' text: [ :anAssociation | anAssociation value record at: 'Year' ] weight: 0.5;
 		column: 'First author' text: [ :anAssociation | anAssociation value authorNames at: 1 ifAbsent: [ '' ] ] weight: 1.5;
 		column: 'Second author' text: [ :anAssociation | anAssociation value authorNames at: 2 ifAbsent: [ '' ] ] weight: 1.5;
-		send: [ :anAssociation | anAssociation value ]
+		send: [ :anAssociation | anAssociation value ];
+		actionUpdateButton
 ]
 
 { #category : 'initialization' }

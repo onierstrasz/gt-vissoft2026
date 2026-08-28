@@ -32,6 +32,43 @@ VSAuthorExamples >> authorPrintsItsName [
 ]
 
 { #category : 'examples' }
+VSAuthorExamples >> reachableAuthorPaperGraph [
+	<gtExample>
+	<return: #GtMondrian>
+	| anAuthor aGraph |
+	anAuthor := self studyCreatesUniqueAuthorsAndLinksPapers.
+	aGraph := GtMondrian new.
+	anAuthor reachableAuthorPaperGraphIn: aGraph.
+	self assert: aGraph topStep root graph nodeChildren size > anAuthor papers size.
+	self assert: aGraph topStep root graph edgeChildren size > 0.
+	^ aGraph
+]
+
+{ #category : 'examples' }
+VSAuthorExamples >> reachableAuthorPaperGraphDoesNotModifyStartingAuthorPapers [
+	<gtExample>
+	<return: #GtMondrian>
+	| anAuthor originalPapers aGraph |
+	anAuthor := self studyCreatesUniqueAuthorsAndLinksPapers.
+	originalPapers := anAuthor papers copy.
+	aGraph := GtMondrian new.
+	anAuthor reachableAuthorPaperGraphIn: aGraph.
+	self assert: anAuthor papers equals: originalPapers.
+	^ aGraph
+]
+
+{ #category : 'examples' }
+VSAuthorExamples >> reachableAuthorPaperGraphHighlightsStartingAuthor [
+	<gtExample>
+	<return: #BlElement>
+	| anAuthor aNode |
+	anAuthor := self studyCreatesUniqueAuthorsAndLinksPapers.
+	aNode := anAuthor authorPaperNodeFor: anAuthor.
+	self assert: aNode background paint color equals: Color lightBlue darker.
+	^ aNode
+]
+
+{ #category : 'examples' }
 VSAuthorExamples >> studyCreatesUniqueAuthorsAndLinksPapers [
 	<gtExample>
 	| aStudy aPaper anAuthor |
@@ -40,6 +77,7 @@ VSAuthorExamples >> studyCreatesUniqueAuthorsAndLinksPapers [
 	anAuthor := aStudy authorNamed: 'Sajaniemi, J.'.
 	self assert: anAuthor class equals: VSAuthor.
 	self assert: (aStudy authorNamed: 'Sajaniemi, J.') equals: anAuthor.
+	self assert: (aStudy authorNamed: 'Sajaniemi, J.') == anAuthor.
 	self assert: (anAuthor papers includes: aPaper).
 	^ anAuthor
 ]

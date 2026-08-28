@@ -17,6 +17,18 @@ VSPaperExamples >> authorGraphLabelsUseGivenThenSurnameInitial [
 ]
 
 { #category : 'examples' }
+VSPaperExamples >> designStudyPaperGraphNodeHasRedBorder [
+	<gtExample>
+	<return: #BlElement>
+	| aPaper aNode |
+	aPaper := self designStudyReceivesSelectedRecord.
+	aNode := aPaper authorPaperNodeFor: aPaper.
+	self assert: aNode border paint color equals: Color red.
+	self assert: aNode border width equals: 2.
+	^ aNode
+]
+
+{ #category : 'examples' }
 VSPaperExamples >> designStudyReceivesSelectedRecord [
 	<gtExample>
 	| aStudy designStudy |
@@ -56,12 +68,15 @@ VSPaperExamples >> paperAuthorNamesFollowAuthorAttributeOrder [
 VSPaperExamples >> paperAuthorPaperGraph [
 	<gtExample>
 	<return: #GtMondrian>
-	| aPaper aGraph |
+	| aPaper aGraph authors papers expectedModels |
 	aPaper := self paperAuthorsAreLinkedToAuthorInstances.
 	aGraph := GtMondrian new.
-	aPaper authorPaperMondrian: aGraph.
-	self assert: aGraph topStep root graph nodeChildren size equals:
-		(({ aPaper } , (aPaper authors flatCollect: #papers)) asSet size + aPaper authors size).
+	aPaper authorPaperGraphIn: aGraph.
+	authors := aPaper authors.
+	papers := (authors flatCollect: #papers) asSet.
+	expectedModels := ({ aPaper } , authors , papers asArray) asSet.
+	self assert: aGraph topStep root graph nodeChildren size equals: expectedModels size.
+	self assert: aGraph topStep root graph edgeChildren size equals: authors size + (authors sum: [ :anAuthor | anAuthor papers size ]).
 	^ aGraph
 ]
 
@@ -125,6 +140,30 @@ VSPaperExamples >> paperSummaryOrdersTitleAndAuthorsAndHidesNumericAttributes [
 	self assert: (orderedKeys includes: '1') equals: false.
 	self assert: (orderedKeys indexOf: 'First Author') < (orderedKeys indexOf: 'Second Author').
 	^ aPaper
+]
+
+{ #category : 'examples' }
+VSPaperExamples >> reachableAuthorPaperGraph [
+	<gtExample>
+	<return: #GtMondrian>
+	| aPaper aGraph reachablePapers reachableAuthors pendingPapers aReachablePaper |
+	aPaper := self paperAuthorsAreLinkedToAuthorInstances.
+	reachablePapers := IdentitySet with: aPaper.
+	reachableAuthors := IdentitySet new.
+	pendingPapers := OrderedCollection with: aPaper.
+	[ pendingPapers isEmpty ] whileFalse: [
+		aReachablePaper := pendingPapers removeFirst.
+		aReachablePaper authors do: [ :anAuthor |
+			reachableAuthors add: anAuthor.
+			anAuthor papers do: [ :anotherPaper |
+				(reachablePapers includes: anotherPaper) ifFalse: [
+					reachablePapers add: anotherPaper.
+					pendingPapers add: anotherPaper ] ] ] ].
+	aGraph := GtMondrian new.
+	aPaper reachableAuthorPaperGraphIn: aGraph.
+	self assert: aGraph topStep root graph nodeChildren size equals: reachablePapers size + reachableAuthors size.
+	self assert: aGraph topStep root graph edgeChildren size equals: (reachableAuthors sum: [ :anAuthor | anAuthor papers size ]).
+	^ aGraph
 ]
 
 { #category : 'examples' }

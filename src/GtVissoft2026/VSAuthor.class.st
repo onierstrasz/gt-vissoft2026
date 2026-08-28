@@ -18,7 +18,56 @@ VSAuthor >> addPaper: aVSPaper [
 	papers addIfNotPresent: aVSPaper
 ]
 
-{ #category : 'views' }
+{ #category : 'visualizing' }
+VSAuthor >> authorPaperGraphIn: aMondrian papers: papers authors: authors [
+	"Render a paper-author graph, emphasizing this author as its starting node."
+	aMondrian nodes
+		stencil: [ :aModel | self authorPaperNodeFor: aModel ];
+		with: (papers asArray , authors asArray).
+	authors do: [ :anAuthor |
+		aMondrian edges
+			connect: (anAuthor papers select: [ :aPaper | papers includes: aPaper ])
+			from: [ :aPaper | anAuthor ]
+			to: [ :aPaper | aPaper ] ].
+	aMondrian layout custom: (GtGraphForceBasedLayout new
+		charge: -2000;
+		length: 200)
+]
+
+{ #category : 'visualizing' }
+VSAuthor >> authorPaperNodeFor: aModel [
+	| isAuthor size tooltipText element |
+	isAuthor := aModel isKindOf: VSAuthor.
+	size := isAuthor
+		ifTrue: [ 25 + (aModel papers size * 8) ]
+		ifFalse: [ 25 + (aModel authors size * 8) ].
+	tooltipText := isAuthor
+		ifTrue: [ aModel name ]
+		ifFalse: [ aModel record at: 'Title' ].
+	element := BlElement new
+		background: (isAuthor
+			ifTrue: [ aModel == self ifTrue: [ Color lightBlue darker ] ifFalse: [ Color lightBlue ] ]
+			ifFalse: [ Color paleRed ]);
+		geometry: (isAuthor
+			ifTrue: [ BlRectangleGeometry new ]
+			ifFalse: [ BlEllipseGeometry new ]);
+		size: size @ size;
+		addAptitude: (BrGlamorousWithLabelTooltipAptitude text: tooltipText);
+		when: BlClickEvent do: [ :anEvent | anEvent currentTarget phlow spawnObject: aModel ];
+		yourself.
+	isAuthor ifTrue: [
+		element
+			layout: BlFrameLayout new;
+			addChild: (BlTextElement new
+				text: (self initialsFor: aModel) asRopedText;
+				constraintsDo: [ :aConstraints |
+					aConstraints frame horizontal alignCenter.
+					aConstraints frame vertical alignCenter ]) ]
+	ifFalse: [ aModel isDesignStudy ifTrue: [ element border: (BlBorder paint: Color red width: 2) ] ].
+	^ element
+]
+
+{ #category : 'gt views' }
 VSAuthor >> gtPapersFor: aView [
 	<gtView>
 	^ aView columnedList
@@ -34,13 +83,33 @@ VSAuthor >> gtPapersFor: aView [
 		column: 'Year' text: [ :anAssociation | anAssociation value record at: 'Year' ] weight: 0.5;
 		column: 'First author' text: [ :anAssociation | anAssociation value authorNames at: 1 ifAbsent: [ '' ] ] weight: 1.5;
 		column: 'Second author' text: [ :anAssociation | anAssociation value authorNames at: 2 ifAbsent: [ '' ] ] weight: 1.5;
-		send: [ :anAssociation | anAssociation value ]
+		send: [ :anAssociation | anAssociation value ];
+		actionUpdateButton
+]
+
+{ #category : 'visualizing' }
+VSAuthor >> gtReachableAuthorPaperGraphFor: aView [
+	<gtView>
+	^ aView mondrian
+		title: 'Reachable author papers graph';
+		priority: 10;
+		painting: [ :aMondrian | self reachableAuthorPaperGraphIn: aMondrian ];
+		actionUpdateButton
 ]
 
 { #category : 'initialization' }
 VSAuthor >> initialize [
 	super initialize.
 	papers := OrderedCollection new
+]
+
+{ #category : 'visualizing' }
+VSAuthor >> initialsFor: anAuthor [
+	| nameParts surname givenNames |
+	nameParts := anAuthor name substrings: ','.
+	surname := nameParts first trimBoth.
+	givenNames := nameParts allButFirst joinUsing: ' '.
+	^ (givenNames select: #isLetter) first asString , (surname select: #isLetter) first asString
 ]
 
 { #category : 'accessing' }
@@ -61,4 +130,22 @@ VSAuthor >> papers [
 { #category : 'printing' }
 VSAuthor >> printOn: aStream [
 	aStream nextPutAll: self name
+]
+
+{ #category : 'visualizing' }
+VSAuthor >> reachableAuthorPaperGraphIn: aMondrian [
+	"Visualize the complete paper-author connected component containing this author without modifying its paper collection."
+	| papers authors pendingPapers aPaper |
+	papers := self papers asIdentitySet.
+	authors := IdentitySet with: self.
+	pendingPapers := self papers copy asOrderedCollection.
+	[ pendingPapers isEmpty ] whileFalse: [
+		aPaper := pendingPapers removeFirst.
+		aPaper authors do: [ :anAuthor |
+			authors add: anAuthor.
+			anAuthor papers do: [ :anotherPaper |
+				(papers includes: anotherPaper) ifFalse: [
+					papers add: anotherPaper.
+					pendingPapers add: anotherPaper ] ] ] ].
+	self authorPaperGraphIn: aMondrian papers: papers authors: authors
 ]
