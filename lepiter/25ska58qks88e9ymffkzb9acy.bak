@@ -1,0 +1,1531 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T11:33:39.44905+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T11:33:59.437233+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "3gPES6D9RQSThj+bMxpTMw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We need to instruct the chat how to create bar charts and line charts."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T11:44:33.394909+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T11:44:44.371863+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "vFfMJwDtTpect8gC8758TQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We don't have instructions for Plotter, but we have examples."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T11:33:29.02689+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T11:44:20.60054+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "wOAZIdtjRl+CalI2ntfCvg=="
+							},
+							"code" : "chat := GtL gt\r\t\tmarkdownResponse;\r\t\tsendMarkdown: 'Create a vertical bar chart from the VSStudy data showing the number of papers published each year as a pale blue bar, next to the number of selected design study papers as a pink bar. Model your solution after the examples in {{gtClass:name=GtPlotterHorizontalBarChartExamples}} and {{gtClass:name=GtPlotterVerticalBarChartExamples}}.'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T11:50:59.552919+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T11:52:08.574218+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "2y/tUAqFRYOAFtG9GR0hXA=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'The generated method {{gtMethod:name=VSStudyExamples>>#papersPublishedAndSelectedDesignStudiesByYearBarChart}} raises an exception. Fix the error.'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "blockQuoteSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-31T11:53:37.787771+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-31T11:53:37.787771+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "IQ5mB1mhS2qPEmFx70kNuw=="
+										},
+										"string" : "papersPublishedAndSelectedDesignStudiesByYearBarChart\n\t<gtExample>\n\t<return: #GtPlotterVerticalBarChart>\n\t| study data published selected maxCount scale chart colors |\n\tstudy := self study.\n\tdata := (2002 to: 2015) flatCollect: [ :year |\n\t\t| papers selectedPapers |\n\t\tpapers := study allPapers values select: [ :paper |\n\t\t\t(paper record at: 'Paper Year') asNumber = year ].\n\t\tselectedPapers := papers select: [ :paper |\n\t\t\tpaper isDesignStudy and: [ paper selectedRecord notNil ] ].\n\t\t{\n\t\t\t{ #year -> year. #kind -> #published. #count -> papers size } asDictionary.\n\t\t\t{ #year -> year. #kind -> #selectedDesignStudies. #count -> selectedPapers size } asDictionary } ].\n\tpublished := (data select: [ :each | (each at: #kind) = #published ]) sumNumbers: [ :each | each at: #count ].\n\tselected := (data select: [ :each | (each at: #kind) = #selectedDesignStudies ]) sumNumbers: [ :each | each at: #count ].\n\tself assert: published equals: study allPapers size.\n\tself assert: selected equals: study selectedPapers size.\n\tcolors := { #published -> Color lightBlue. #selectedDesignStudies -> Color pink } asDictionary.\n\tdata := GtPlotterDataGroup new values: data.\n\tdata := data groupedBy: [ :each | each at: #year ] labelled: [ :year | year asString ].\n\tdata := data groupedBy: [ :each | each at: #kind ] sorted: [ :left :right | left key = #published ] colored: [ :kind | colors at: kind ].\n\tmaxCount := data inject: 0 intoValues: [ :maximum :each | maximum max: (each at: #count) ].\n\tscale := GtPlotterLinearScale new domainFrom: 0 to: maxCount.\n\tchart := GtPlotterVerticalBarChart new.\n\tchart barHeightScale: scale.\n\tchart barWidthScale constant: 16.\n\tchart barHeightData: [ :each | each at: #count ].\n\tchart barLabelSpacing: 35.\n\tchart amountOfTicks: 6.\n\tchart with: data.\n\t^ chart"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T11:53:31.083103+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T11:53:53.221897+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "TzaSbctVRUWeIcGyIYExLA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "That doesn't work. The broken code:"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T11:54:02.557116+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T11:54:07.947376+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "6Hu1fQSPRhWyF7Rz5i330g=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We delete the code and try again."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T11:53:25.742202+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T11:57:21.152245+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "F8gF1FLcTxCGNWD8GT4wjA=="
+							},
+							"code" : "chat := GtL gt\r\t\tmarkdownResponse;\r\t\tsendMarkdown: 'Create a vertical bar chart from the VSStudy data showing the number of papers published each year as a pale blue bar, next to the number of selected design study papers as a pink bar. Model your solution after the examples in {{gtClass:name=GtPlotterHorizontalBarChartExamples}} and {{gtClass:name=GtPlotterVerticalBarChartExamples}}.'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "blockQuoteSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-31T11:57:42.278779+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-31T11:57:42.278779+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "+cnMzEYfQgGjSMK0/+Jqlg=="
+										},
+										"string" : "papersPublishedAndSelectedDesignStudiesByYear\n\t<gtExample>\n\t<return: #GtPlotterVerticalBarChart>\n\t| study years data maximumCount scale chart |\n\tstudy := self study.\n\tyears := (study allPapers values collect: [ :eachPaper | eachPaper record at: 'Paper Year' ]) asSet asSortedCollection.\n\tdata := GtPlotterDataGroup new values: (years flatCollect: [ :eachYear |\n\t\t| papers selectedDesignStudies |\n\t\tpapers := study allPapers values select: [ :eachPaper | (eachPaper record at: 'Paper Year') = eachYear ].\n\t\tselectedDesignStudies := papers select: [ :eachPaper |\n\t\t\teachPaper isDesignStudy and: [ eachPaper selectedRecord notNil ] ].\n\t\t{ { eachYear. false. papers size }. { eachYear. true. selectedDesignStudies size } } ]).\n\tdata := data\n\t\tgroupedBy: [ :eachValue | eachValue first ]\n\t\tsorted: [ :a :b | a < b ]\n\t\tlabelled: [ :eachYear | eachYear ].\n\tdata := data\n\t\tgroupedBy: [ :eachValue | eachValue second ]\n\t\tsorted: [ :a :b | a key not ]\n\t\tcolored: [ :isSelectedDesignStudy |\n\t\t\tisSelectedDesignStudy\n\t\t\t\tifTrue: [ Color r: 244 g: 167 b: 191 range: 255 ]\n\t\t\t\tifFalse: [ Color r: 173 g: 216 b: 230 range: 255 ] ].\n\tmaximumCount := data inject: 0 intoValues: [ :maximum :eachValue | maximum max: eachValue third ].\n\tscale := GtPlotterLinearScale new domainFrom: 0 to: maximumCount.\n\tchart := GtPlotterVerticalBarChart new.\n\tchart barHeightScale: scale.\n\tchart barWidthScale constant: 18.\n\tchart barHeightData: [ :eachValue | eachValue third ].\n\tchart barLabelSpacing: 30.\n\tchart amountOfTicks: 5.\n\tchart with: data.\n\tself assert: study allPapers size equals: 346.\n\tself assert: study selectedPapers size equals: 65.\n\t^ chart"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T11:57:26.542947+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T11:57:38.095506+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "zkXdnYxbS1aJjxbIuQEjhA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Again it generates a broken example:"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T12:07:16.338479+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T12:08:35.774094+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "f7m4yQZhRFa1q5ZWrAe/Iw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "It seems the problem is not in the generated code, but rather {{gtClass:name=GtPlotterVerticalBarChart}} is incomplete. In particular {{gtMethod:name=GtPlotterVerticalBarChart>>#createGroupBarsFor:}} refers to a missing accessor `groupSpacing`. Maybe the LLM can fix these errors?"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T12:06:22.854167+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T12:06:31.957547+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "POx4LW5ITwyYXQ7EOxxxww=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# First Plotter attempts"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T12:04:18.656671+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T12:05:53.606021+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "1F13VyLZSNKaoXYsOKThLQ=="
+							},
+							"code" : "chat := GtL gt\r\t\tmarkdownResponse;\r\t\taddResponseFormatForMagritte: GtLCodeTransformations\r\t\t\tnamed: 'CodeTransformations'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T12:02:06.063346+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T12:04:21.954686+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "0XbtCccrR7WJsFcFCjpvlA=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'The class GtPlotterVerticalBarChart is missing some slots and methods that are present in GtPlotterHorizontalBarChart. Analyze the differences and propose the changes as CodeTransformations.'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T12:10:28.621427+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T12:10:51.270588+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "dseL1QbPTPKLtc8is5jNNA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "The answer looks good, but I do not see where `groupSpacing` is initialized."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T14:18:07.498014+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T14:20:28.123774+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "+3cHGNt1QvyAwx6EZv3Psw=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'Generate new examples, similar to the `sequoia` examples in GtPlotterHorizontalBarChartExamples, but for vertical bar charts. Make sure the examples are green.'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T14:22:13.116991+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T14:23:14.827261+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "5z+ju2ztSE+X6l6/HhvwtQ=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'The x-axis labels are not readable in the new examples. Rotate them slightly so they are readable.'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T14:23:58.681498+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T14:24:33.112778+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Ehp7e9FnRYa+cpmSmzp/pw=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'The x-axis labels at the left are being cut off. Adjust the bar chart so the left edge of all the labels can be read.'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T14:41:47.675316+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T14:42:14.909368+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "qghGvCeiR8GRY15Iw/vmxg=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'The examples now raise errors. Please fix them and ensure that the examples are green.'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T14:43:47.699608+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T14:45:46.591539+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "oe8gQBMpRn+3EpuWwW5PNg=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'The horizontal line showing the 10000 threshold in {{gtMethod:name=GtPlotterVerticalBarChartExamples>>#sequoiaSearchResults}} is misaligned to the right. Make sure it is properly aligned to all the bars. Also the first two text labels are chopped off at the left. Fix it so they they are legible.'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T14:49:36.940836+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T14:51:16.517545+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "+16vHZ20Sn6UTKvnQYrdDQ=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'The first two labels are still being chopped off. Can you introduce a fake blank bar at the far left to leave space for the labels?'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T14:59:47.516564+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:01:22.595653+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Yd0qTKNMRiu7dvQBmwNy0Q=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'Fix {{gtMethod:name=GtPlotterVerticalBarChartExamples>>#sequoiaSearchResultsGroupedByGenus}} to look  like {{gtMethod:name=GtPlotterHorizontalBarChartExamples>>#sequoiaSearchResultsGroupedByGenus}} rotated 90 degrees. There should be three bar charts, side-by-side, with a common y-axis.'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-31T15:05:18.017404+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-31T15:05:26.108257+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "RunDBaI9QkKxqG68emA02A=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "*I traced the grouping layout and found that the requested structure requires a dedicated vertical-group layout rather than simply rotating the existing nested layout. My exploratory changes were reverted, so the shared vertical bar-chart behavior remains intact.*\n\n*The existing {{gtMethod:GtPlotterVerticalBarChartExamples>>#sequoiaSearchResultsGroupedByGenus}} still runs successfully. I have not claimed the requested visual arrangement as complete because the current chart construction needs a separate composition step to provide one shared y-axis alongside three independently laid-out genus panels.*"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:04:52.716509+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:05:11.066283+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "sGIGg1+pQgauNV9ye3480A=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "This seems not to work because of the limitations of the current implementation."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:06:47.891874+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:06:52.617376+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "/Y/tjts0RzKoS2a1SyQDSg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We remove this example."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T12:05:25.863208+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T12:05:32.321977+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "XyUdrMD4TTSSzu3QcjP0NA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Fixing broken Plotter classes"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:08:14.493033+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:08:25.642944+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "MXCIThA9Ttu3HtYrZHiKQA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We try again to create the bar charts."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:33:54.659798+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:35:10.054012+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Zh8Ri+vfQfK6Cx69U+p6vQ=="
+							},
+							"code" : "chat\r\tmarkdownResponse;\r\taddResponseFormatForMagritte: GtLCodeTransformations\r\t\tnamed: 'CodeTransformations'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:08:27.260831+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:34:02.754926+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "DWIXDNUvSvu6iPOMHhb13A=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'Create a horizontal bar chart from the VSStudy data showing the number of papers published each year as a pale blue bar, next to the number of selected design study papers as a pink bar. Model your solution after the examples in {{gtClass:name=GtPlotterHorizontalBarChartExamples}}.'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:37:16.453559+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:39:12.25268+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "StKcI1J3S36vU4/onAcjmg=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'Clicking on a bar should open an inspector on a VSPaperGroup of the papers for that bar.'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:41:53.021639+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:45:23.182262+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "K/2CrzITTB2gVg8w40GK+w=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'Clicking on a bar is yielding an instance of GtPlotterDataGroupWithLabel rather than a VSPaperGroup. Fix it so the right kind of object is spawned in the adjacent pane.'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:45:36.299629+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:45:48.909106+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "lqQitNcBQjCQvMR9ePX8dA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "The bar chart is ok, but clicking does not yield a paper group."
+						},
+						{
+							"__type" : "blockQuoteSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:45:54.646145+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:45:54.646145+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "uKwdJTLlSW2sXmeJzJuiBg=="
+							},
+							"string" : "papersPublishedByYearChart\n\t<gtExample>\n\t<return: #GtPlotterHorizontalBarChart>\n\t| aStudy allPapers selectedDesignStudyPapers years chartData theData maximumCount barChart |\n\taStudy := self study.\n\tallPapers := aStudy allPapers values.\n\tselectedDesignStudyPapers := allPapers select: [ :each | each isDesignStudy and: [ each selectedRecord notNil ] ].\n\tyears := (allPapers collect: [ :each | each record at: #'Paper Year' ]) asSet asSortedCollection.\n\tchartData := years flatCollect: [ :eachYear | \n\t\t| publishedPapers selectedPapers |\n\t\tpublishedPapers := allPapers select: [ :each | (each record at: #'Paper Year') = eachYear ].\n\t\tselectedPapers := selectedDesignStudyPapers select: [ :each | (each record at: #'Paper Year') = eachYear ].\n\t\t{ \n\t\t\t{ #year -> eachYear. #series -> #published. #count -> publishedPapers size. #papers -> publishedPapers } asDictionary.\n\t\t\t{ #year -> eachYear. #series -> #selectedDesignStudy. #count -> selectedPapers size. #papers -> selectedPapers } asDictionary } ].\n\tself assert: ((chartData select: [ :each | (each at: #series) = #published ]) sum: [ :each | each at: #count ]) equals: allPapers size.\n\tself assert: ((chartData select: [ :each | (each at: #series) = #selectedDesignStudy ]) sum: [ :each | each at: #count ]) equals: selectedDesignStudyPapers size.\n\tself assert: (chartData allSatisfy: [ :each | (each at: #papers) size = (each at: #count) ]).\n\ttheData := GtPlotterDataGroup new values: chartData.\n\ttheData := theData\n\t\tgroupedBy: [ :each | each at: #year ]\n\t\tsorted: [ :a :b | a key < b key ]\n\t\tlabelled: #yourself.\n\ttheData := theData\n\t\tgroupedBy: [ :each | each at: #series ]\n\t\tsorted: [ :a :b | a key = #published ]\n\t\tcolored: [ :eachSeries | eachSeries = #published\n\t\t\tifTrue: [ Color r: 173 g: 216 b: 230 range: 255 ]\n\t\t\tifFalse: [ Color r: 255 g: 182 b: 193 range: 255 ] ].\n\tmaximumCount := chartData inject: 0 into: [ :maximum :each | maximum max: (each at: #count) ].\n\tbarChart := GtPlotterHorizontalBarChart new.\n\tbarChart\n\t\twithAdjacentBars;\n\t\tgroupSpacing: 5;\n\t\tbarLabelSpacing: 55;\n\t\tbarStencil: [ :aBar :eachValue :eachGroup | BlElement new\n\t\t\twhen: BlClickEvent do: [ :anEvent |\n\t\t\t\tanEvent consumed: true.\n\t\t\t\tanEvent currentTarget phlow spawnObject: (VSPaperGroup withAll: (eachValue at: #papers)) ] ];\n\t\tbarWidthScale: (GtPlotterLinearScale new domainFrom: 0 to: maximumCount);\n\t\tbarWidthData: [ :each | each at: #count ];\n\t\tbarHeightScale: (GtPlotterLinearScale new domainFrom: 0 to: 2; rangeFrom: 10 to: 24);\n\t\tbarHeightData: [ :eachGroup | eachGroup size ];\n\t\tamountOfTicks: 4;\n\t\twith: theData.\n\t^ barChart"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T15:06:54.845169+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T15:07:04.745637+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "9hwWs3J2SpewzjIWATsgdA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Second attempt with horizontal bar charts"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:44:26.031727+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:44:43.380599+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "NIZueHgpTtuwe28WzPFkqg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Instead of starting with the visualization we should start with the relevant paper groups."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:45:00.500354+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:00:04.285172+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "D/oSWroTTD+E+uiwbmZyIw=="
+							},
+							"code" : "chat := GtL gt\r\t\tmarkdownResponse;\r\t\taddResponseFormatForMagritte: GtLCodeTransformations\r\t\t\tnamed: 'CodeTransformations';\r\t\tgtPageExplanation: 'Tutorial: molding CSV data into an explainable system'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:01:57.471811+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:02:41.158776+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "YjwpldAmQr2VRNm9rQvCSA=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'Add a query method to VSStudy that returns a VSPaperGroup all the papers of a given year, or all the selected papers of that year. Add examples to verify that the query method works correctly.'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:45:05.349057+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:04:26.758115+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "6tlMdcZwTSuPgGHLvjlRuw=="
+							},
+							"code" : "chat sendMarkdown: 'Add views to VSStudy listing the paper groups by year or the selected paper groups by year. These views should appear after the Selected Papers view but before the Authors view.'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:08:45.346617+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:09:35.744473+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "wEAHQyxmRtufSWGz8GGy5w=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "***BUG FIX*** — we have a similar bug to the other day. After browsing  the mondrian graph, a slot is zeroed. In this case the `items` slot is turned into an empty collection."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:06:59.998902+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:10:30.023829+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "7MuARDadR3+HYXQLD1kKxg=="
+							},
+							"code" : "chat sendMarkdown: 'There is a bug in the Reachable authors paper graph view of VSPaperGroup. After viewing the graph, the `items` slot becomes an emoty collection. Fix this bug.'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:11:58.350455+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:12:10.383838+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "3mUCqdKURyKQBJKjvoHMNQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "*Fixed {{gtMethod:VSPaperGroup>>#reachablePaperAuthorComponent}}. The traversal worklist now copies the group’s items into a new `OrderedCollection`, rather than operating on the original collection. Rendering the reachable-author graph therefore no longer consumes the group.*\n\n*Added and ran green regression example {{gtMethod:VSStudyExamples>>#reachableAuthorPaperGraphDoesNotEmptyPaperGroup}}. The existing graph example also remains green.*"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T15:44:11.723623+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T15:46:07.222643+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "oz13cS11Q96C+dqgUt6KPA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Third attempt starting with "
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2026-08-31T11:33:19.941226+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2026-08-31T11:33:19.941226+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Reproducing graphs from VISSOFT 2016"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "b2f37e99-d84b-43c6-b4e3-bbd57f2c8024"
+	}
+}

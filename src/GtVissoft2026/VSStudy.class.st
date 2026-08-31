@@ -97,6 +97,22 @@ VSStudy >> gtAuthorsFor: aView [
 		actionUpdateButton
 ]
 
+{ #category : 'views' }
+VSStudy >> gtPaperGroupsByYearFor: aView [
+	<gtView>
+	^ aView columnedList
+		title: 'Paper groups by year';
+		priority: 2.1;
+		items: [
+			((VSPaperGroup withAll: allPapers values)
+				groupedBy: [ :aPaper | aPaper record at: 'Paper Year' ]) associations
+				sorted: [ :anAssociation :anotherAssociation | anAssociation key < anotherAssociation key ] ];
+		column: 'Year' text: [ :anAssociation | anAssociation key ];
+		column: '# of papers' text: [ :anAssociation | anAssociation value size ];
+		send: [ :anAssociation | anAssociation value ];
+		actionUpdateButton
+]
+
 { #category : 'gt views' }
 VSStudy >> gtPapersFor: aView [
 	<gtView>
@@ -114,6 +130,22 @@ VSStudy >> gtPapersFor: aView [
 		column: 'Year' text: [ :anAssociation | anAssociation value record at: 'Year' ] weight: 0.5;
 		column: 'First author' text: [ :anAssociation | anAssociation value authorNames at: 1 ifAbsent: [ '' ] ] weight: 1.5;
 		column: 'Second author' text: [ :anAssociation | anAssociation value authorNames at: 2 ifAbsent: [ '' ] ] weight: 1.5;
+		send: [ :anAssociation | anAssociation value ];
+		actionUpdateButton
+]
+
+{ #category : 'views' }
+VSStudy >> gtSelectedPaperGroupsByYearFor: aView [
+	<gtView>
+	^ aView columnedList
+		title: 'Selected paper groups by year';
+		priority: 2.2;
+		items: [
+			((VSPaperGroup withAll: (allPapers values select: [ :aPaper | aPaper selectedRecord notNil ]))
+				groupedBy: [ :aPaper | aPaper record at: 'Paper Year' ]) associations
+				sorted: [ :anAssociation :anotherAssociation | anAssociation key < anotherAssociation key ] ];
+		column: 'Year' text: [ :anAssociation | anAssociation key ];
+		column: '# of papers' text: [ :anAssociation | anAssociation value size ];
 		send: [ :anAssociation | anAssociation value ];
 		actionUpdateButton
 ]
@@ -205,6 +237,16 @@ VSStudy >> loadFromResources [
 { #category : 'accessing' }
 VSStudy >> paperAt: anId [
 	^ allPapers at: anId
+]
+
+{ #category : 'querying' }
+VSStudy >> papersInYear: aYear selectedOnly: aBoolean [
+	| papers |
+	papers := allPapers values select: [ :each |
+		(each record at: 'Paper Year') = aYear asString ].
+	aBoolean ifTrue: [
+		papers := papers select: [ :each | each selectedRecord notNil ] ].
+	^ VSPaperGroup withAll: papers
 ]
 
 { #category : 'searching' }

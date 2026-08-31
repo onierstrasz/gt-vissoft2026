@@ -96,7 +96,9 @@ VSPaperGroup >> reachablePaperAuthorComponent [
 	| papers authors pendingPapers aPaper |
 	papers := self items asIdentitySet.
 	authors := IdentitySet new.
-	pendingPapers := self items asOrderedCollection.
+	pendingPapers := OrderedCollection new
+		addAll: self items;
+		yourself.
 	[ pendingPapers isEmpty ] whileFalse: [
 		aPaper := pendingPapers removeFirst.
 		aPaper authors do: [ :anAuthor |

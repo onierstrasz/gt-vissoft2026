@@ -788,12 +788,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-08-26T17:58:47.329154+02:00"
+			"dateAndTimeString" : "2026-08-31T11:30:02.520122+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Producing visualizations"
+		"title" : "Producing Mondrian visualizations"
 	},
 	"uid" : {
 		"__type" : "uuid",

@@ -76,6 +76,18 @@ VSStudyExamples >> paperGroupReachableAuthorPaperGraph [
 	^ aGraph
 ]
 
+{ #category : 'Examples' }
+VSStudyExamples >> paperGroupsByYear [
+	<gtExample>
+	| groups |
+	groups := (VSPaperGroup withAll: self study allPapers values)
+		groupedBy: [ :aPaper | aPaper record at: 'Paper Year' ].
+	self assert: (groups at: '2015') class equals: VSPaperGroup.
+	self assert: (groups at: '2015') size equals: 31.
+	self assert: (groups values inject: 0 into: [ :sum :each | sum + each size ]) equals: 346.
+	^ groups
+]
+
 { #category : 'examples' }
 VSStudyExamples >> papersAreNumberedAndSortedById [
 	<gtExample>
@@ -86,6 +98,30 @@ VSStudyExamples >> papersAreNumberedAndSortedById [
 	self assert: papers first id equals: '1'.
 	self assert: papers size equals: aStudy allPapers size.
 	self assert: (papers withIndexCollect: [ :aPaper :anIndex | anIndex -> aPaper ]) first key equals: 1.
+	^ papers
+]
+
+{ #category : 'Examples' }
+VSStudyExamples >> papersInYearReturnsAllPapers [
+	<gtExample>
+	| papers |
+	papers := self study papersInYear: 2015 selectedOnly: false.
+	self assert: papers class equals: VSPaperGroup.
+	self assert: papers size equals: 31.
+	self assert: (papers allSatisfy: [ :each | (each record at: 'Paper Year') = '2015' ]).
+	^ papers
+]
+
+{ #category : 'Examples' }
+VSStudyExamples >> papersInYearReturnsSelectedPapers [
+	<gtExample>
+	| papers |
+	papers := self study papersInYear: 2015 selectedOnly: true.
+	self assert: papers class equals: VSPaperGroup.
+	self assert: papers size equals: 10.
+	self assert: (papers allSatisfy: [ :each |
+		(each record at: 'Paper Year') = '2015'
+			and: [ each selectedRecord notNil ] ]).
 	^ papers
 ]
 
@@ -113,6 +149,20 @@ VSStudyExamples >> papersMatchingTitleReturnsPapersContainingTheQuery [
 	^ matches
 ]
 
+{ #category : 'Examples' }
+VSStudyExamples >> reachableAuthorPaperGraphDoesNotEmptyPaperGroup [
+	<gtExample>
+	| group originalItems graph |
+	group := ((VSPaperGroup withAll: self study allPapers values)
+		groupedBy: [ :aPaper | aPaper record at: 'Paper Year' ]) at: '2015'.
+	originalItems := group items asArray.
+	graph := GtMondrian new.
+	group reachableAuthorPaperGraphIn: graph.
+	self assert: group size equals: originalItems size.
+	self assert: group items asArray equals: originalItems.
+	^ graph
+]
+
 { #category : 'examples' }
 VSStudyExamples >> selectedDesignStudyPapers [
 	<gtExample>
@@ -122,6 +172,18 @@ VSStudyExamples >> selectedDesignStudyPapers [
 	self assert: papers size equals: aStudy selectedPapers size.
 	self assert: (papers allSatisfy: [ :aPaper | aPaper isDesignStudy ]).
 	^ papers
+]
+
+{ #category : 'Examples' }
+VSStudyExamples >> selectedPaperGroupsByYear [
+	<gtExample>
+	| groups |
+	groups := (VSPaperGroup withAll: (self study allPapers values select: [ :aPaper | aPaper selectedRecord notNil ]))
+		groupedBy: [ :aPaper | aPaper record at: 'Paper Year' ].
+	self assert: (groups at: '2015') class equals: VSPaperGroup.
+	self assert: (groups at: '2015') size equals: 10.
+	self assert: (groups values inject: 0 into: [ :sum :each | sum + each size ]) equals: 65.
+	^ groups
 ]
 
 { #category : 'examples' }

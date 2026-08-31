@@ -178,7 +178,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-25T18:36:14.787506+02:00"
+						"dateAndTimeString" : "2026-08-31T10:55:37.46714+02:00"
 					}
 				},
 				"uid" : {
@@ -188,7 +188,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[VISSOFT 2026 Talk]]"
+				"string" : "[[VISSOFT 2026 Talk (slideshow)]]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -231,6 +231,40 @@
 								"__type" : "textStyle"
 							},
 							"string" : "We want to download the dataset, have the LLM create a model of the dataset, then add visualizations to answer questions."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:38:10.18648+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T15:38:11.628196+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "KeCTd2dJQlu/YdbCVndhTQ=="
+							},
+							"code" : "VSStudyExamples new study"
 						},
 						{
 							"__type" : "textSnippet",
@@ -369,7 +403,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-26T17:58:47.335349+02:00"
+									"dateAndTimeString" : "2026-08-31T11:30:02.533942+02:00"
 								}
 							},
 							"uid" : {
@@ -379,7 +413,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Producing visualizations]]"
+							"string" : "[[Producing Mondrian visualizations]]"
 						},
 						{
 							"__type" : "textSnippet",
@@ -417,6 +451,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "[[Cleaning code]]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T11:33:18.016735+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T11:33:18.016735+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "e+HsYe0kSYiOFIsxctEvpw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Reproducing graphs from VISSOFT 2016]]"
 						}
 					]
 				},
@@ -481,7 +552,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-31T10:55:24.232875+02:00"
+									"dateAndTimeString" : "2026-08-31T10:55:37.471774+02:00"
 								}
 							},
 							"uid" : {
@@ -491,7 +562,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[VISSOFT 2026 Talk]]]"
+							"string" : "[[VISSOFT 2026 Talk (slideshow)]]]"
 						}
 					]
 				},
