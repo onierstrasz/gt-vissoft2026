@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-31T11:33:59.437233+02:00"
+						"dateAndTimeString" : "2026-08-31T17:15:28.887886+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,41 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We need to instruct the chat how to create bar charts and line charts."
+				"string" : "We need to instruct the chat how to create bar charts and line charts.\nThe end result is in the *Papers by year* view."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T17:15:06.508632+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T17:15:13.621747+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "dtdWqUmPTlK9W9XWWZwx2A=="
+				},
+				"code" : "VSStudyExamples new study"
 			},
 			{
 				"__type" : "textSnippet",
@@ -1488,14 +1522,554 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-31T16:15:01.181069+02:00"
+									"dateAndTimeString" : "2026-08-31T16:32:30.530682+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "L28X6IyfQfqbq1SE2xtr/A=="
 							},
-							"code" : "chat sendMarkdown: 'There is a bug in the Reachable authors paper graph view of VSPaperGroup. After viewing the graph, the `items` slot becomes an emoty collection. Fix this bug.'"
+							"code" : "chat sendMarkdown: 'There is a bug in the Reachable authors paper graph view of VSPaperGroup. After viewing the graph, the `items` slot becomes an empty collection. Fix this bug.'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:16:11.665587+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:17:02.680861+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "dKf7OY+fTVCiN8CoB/9HAA=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'Create a horizontal bar chart from the VSStudy data showing the number of papers published each year as a pale blue bar, next to the number of selected design study papers as a pink bar. Model your solution after the examples in {{gtClass:name=GtPlotterHorizontalBarChartExamples}}. Clicking on a bar should navigate to the corresponding VSPaperGroup of papers for that year.'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-31T16:21:07.368044+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-31T16:21:18.653407+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "D9pX0ArWSTmNwoIK80m/AA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "*Added {{gtMethod:VSStudy>>#gtPaperCountsByYearFor:}}, backed by {{gtMethod:VSStudy>>#paperCountsByYearChart}}.*\n\n*The horizontal grouped bar chart uses pale blue for all papers and pink for selected design-study papers. Each bar retains its corresponding {{gtClass:VSPaperGroup}} and opens it when clicked. The chart has been rendered and its example, {{gtMethod:VSStudyExamples>>#paperCountsByYearChart}}, is green.*"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:20:51.146048+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:21:05.119728+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "2jtVFucFR1+RL/DRmQYanA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "The bar chart looks ok but clicking is broken."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:20:21.74172+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:21:40.504218+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "cm206u9wQ3mCQh1F5dtfeQ=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'Clicking on the bars raises an error instead of opening the corresponding paper group. Fix the error.'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:52:38.693305+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:52:46.337458+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "hbNP1Gj8T4uRS8DB8VVmAQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "***I have to debug the code myself.***"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:48:39.464662+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:50:56.602819+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "+9pueVHOTIC31Vkb3g++4g=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Debugging shows that the code `paperGroup := aContext originalValue third.` is not correct, since `aContext originalValue` is an instance of `GtPlotterDataGroupWithLabel` which does not have a `third`. Thee actual third value is buried deeper."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:54:25.092855+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:54:29.778938+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "mR+xJM5yTV2yeQnN7SYRRw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "It probably should be:"
+						},
+						{
+							"__type" : "blockQuoteSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:54:32.259641+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:54:32.259641+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "lnXiKvmNQdGkOEogDpavdg=="
+							},
+							"string" : "paperGroup := aContext originalValue values first third."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:51:02.254474+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:58:30.722175+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "V4eD4up0QrurY37TsSI64w=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'The code `paperGroup := aContext originalValue third.` is in error since `aContext originalValue` is an instance of `GtPlotterDataGroupWithLabel` which does not have a `third`. The actual third value is buried deeper. Fix the error.'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-31T16:58:39.568751+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-31T16:58:39.568751+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "RdlT7kfsRJynPLXCm/6JQQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Fixed {{gtMethod:VSStudy>>#paperCountsByYearChart}} navigation. A bar context’s original value is the label-decorator, so the associated data tuple is accessed through `originalValue values first`; its third item is the target {{gtClass:VSPaperGroup}}.\n\nAdded and ran a green example, {{gtMethod:VSStudyExamples>>#paperCountsByYearChartBarsHavePaperGroups}}, verifying that the chart data retains paper groups."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:58:34.996919+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:58:38.352878+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "w9HSpl1sTUyzwGovzfh/Eg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "It finds the error:"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T16:59:24.955902+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T17:09:23.069079+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "lusSa2FNSTCZpGbYHgKuOQ=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'It seems that not all the bars navigate to paper groups. For example, the 2003 entries navigate to an instance of GtPlotterDataGroupWithLabel. Fix it so that all the bars map to paper groups, and verify it.'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T17:08:59.466831+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T17:09:57.12934+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "saj/zq+6Q3yMVFTou9PFSQ=="
+							},
+							"code" : "chat\r\tsendMarkdown: 'The problem still exists. Clicking on certain bars, such as those for 2003, still yield an instance of GtPlotterDataGroupWithLabel. Fix it.'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-31T17:12:05.883414+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-31T17:12:16.819706+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "CBBVjC8lTCOXD0MVysLPkQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "*The default adjacent-bar-group stencil installed its own click handler, which opened the raw `GtPlotterDataGroupWithLabel` and superseded the handler on individual bar elements.*\n\n*Updated {{gtMethod:VSStudy>>#paperCountsByYearChart}} to provide a custom group stencil. Its click handler explicitly unwraps the plotter data and opens the corresponding {{gtClass:VSPaperGroup}}. The rendered-chart regression example {{gtMethod:VSStudyExamples>>#paperCountsByYearChartAllRenderedBarGroupsMapToPaperGroups}} is green and verifies all 24 rendered bars, including the 2003 group of 40 papers, resolve to paper groups.*"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T17:12:01.237435+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-31T17:12:03.935408+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "BSMb/uXxQKGnHUS10GHOQA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Finally fixed!"
 						}
 					]
 				},
@@ -1518,7 +2092,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-31T15:46:07.222643+02:00"
+						"dateAndTimeString" : "2026-08-31T17:14:44.772518+02:00"
 					}
 				},
 				"uid" : {
@@ -1528,7 +2102,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# Third attempt starting with "
+				"string" : "# Third attempt starting with the paper groups"
 			}
 		]
 	},
@@ -1551,12 +2125,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-08-31T11:33:19.941226+02:00"
+			"dateAndTimeString" : "2026-08-31T17:14:55.790206+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Reproducing graphs from VISSOFT 2016"
+		"title" : "Reproducing the bar graph from VISSOFT 2016"
 	},
 	"uid" : {
 		"__type" : "uuid",

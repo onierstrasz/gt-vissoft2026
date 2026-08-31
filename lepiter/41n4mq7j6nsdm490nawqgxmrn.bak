@@ -294,7 +294,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-31T11:32:59.823583+02:00"
+									"dateAndTimeString" : "2026-08-31T17:14:56.024553+02:00"
 								}
 							},
 							"uid" : {
@@ -304,7 +304,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Re"
+							"string" : "[[Reproducing the bar graph from VISSOFT 2016]]"
 						}
 					]
 				},

@@ -98,6 +98,16 @@ VSStudy >> gtAuthorsFor: aView [
 ]
 
 { #category : 'views' }
+VSStudy >> gtPaperCountsByYearFor: aView [
+	<gtView>
+	^ aView explicit
+		title: 'Papers by year';
+		priority: 2.3;
+		stencil: [ self paperCountsByYearChart asElement ];
+		actionUpdateButton
+]
+
+{ #category : 'views' }
 VSStudy >> gtPaperGroupsByYearFor: aView [
 	<gtView>
 	^ aView columnedList
@@ -237,6 +247,63 @@ VSStudy >> loadFromResources [
 { #category : 'accessing' }
 VSStudy >> paperAt: anId [
 	^ allPapers at: anId
+]
+
+{ #category : 'charting' }
+VSStudy >> paperCountsByYearChart [
+	| years data maximumCount widthScale heightScale chart |
+	years := (allPapers values collect: [ :aPaper | aPaper record at: 'Paper Year' ]) asSet
+		asSortedCollection.
+	data := GtPlotterDataGroup new values: (years flatCollect: [ :aYear |
+		{
+			{ aYear. false. self papersInYear: aYear selectedOnly: false }.
+			{ aYear. true. self papersInYear: aYear selectedOnly: true } } ]).
+	data := data
+		groupedBy: [ :each | each first ]
+		sorted: [ :a :b | a key < b key ]
+		labelled: #yourself.
+	data := data
+		groupedBy: [ :each | each second ]
+		sorted: [ :a :b | a key not ]
+		colored: [ :isSelected |
+			isSelected
+				ifTrue: [ Color r: 244 g: 204 b: 204 range: 255 ]
+				ifFalse: [ Color r: 173 g: 216 b: 230 range: 255 ] ].
+	maximumCount := data inject: 0 intoValues: [ :maximum :each |
+		maximum max: each third size ].
+	widthScale := GtPlotterLinearScale new domainFrom: 0 to: maximumCount.
+	heightScale := GtPlotterLinearScale new
+		domainFrom: 0 to: data size;
+		rangeFrom: 10 to: 30.
+	chart := GtPlotterHorizontalBarChart new.
+	chart
+		withAdjacentBars;
+		groupSpacing: 5;
+		barLabelSpacing: 55;
+		barWidthScale: widthScale;
+		barWidthData: [ :each | each third size ];
+		barHeightScale: heightScale;
+		barHeightData: [ :eachGroup | eachGroup size ];
+		amountOfTicks: 4;
+		barGroupStencil: [ :aBar :aGroup :aContext |
+			(aBar stencil scaleContext: aContext) asElement
+				constraintsDo: [ :c |
+					c horizontal matchParent.
+					c vertical exact: (aBar heightScale map: (aBar heightData cull: aGroup)) ];
+				when: BlClickEvent do: [ :anEvent |
+					anEvent consumed: true.
+					anEvent currentTarget phlow
+						spawnObject: (self paperGroupFromPlotterDataEntity: aContext originalValue) ];
+				geometry: (BlHistogramGeometry new beLeftToRight values: aContext mappedValue);
+				background: aGroup color ];
+		with: data.
+	^ chart
+]
+
+{ #category : 'charting' }
+VSStudy >> paperGroupFromPlotterDataEntity: aDataEntity [
+	"Extract the paper group from a plotter group, removing its presentation decorators."
+	^ aDataEntity decoratedEntity values first third
 ]
 
 { #category : 'querying' }

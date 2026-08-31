@@ -257,7 +257,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-31T15:38:11.628196+02:00"
+									"dateAndTimeString" : "2026-08-31T17:13:23.898915+02:00"
 								}
 							},
 							"uid" : {
@@ -477,7 +477,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-31T11:33:18.016735+02:00"
+									"dateAndTimeString" : "2026-08-31T17:14:56.363174+02:00"
 								}
 							},
 							"uid" : {
@@ -487,7 +487,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Reproducing graphs from VISSOFT 2016]]"
+							"string" : "[[Reproducing the bar graph from VISSOFT 2016]]"
 						}
 					]
 				},

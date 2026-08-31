@@ -62,6 +62,66 @@ VSStudyExamples >> paperAuthorCounts [
 	^ papers
 ]
 
+{ #category : 'Examples' }
+VSStudyExamples >> paperCountsByYearChart [
+	<gtExample>
+	<return: #GtPlotterHorizontalBarChart>
+	| chart |
+	chart := self study paperCountsByYearChart.
+	self assert: chart class equals: GtPlotterHorizontalBarChart.
+	^ chart
+]
+
+{ #category : 'Examples' }
+VSStudyExamples >> paperCountsByYearChartAllBarsMapToPaperGroups [
+	<gtExample>
+	| study chart paperGroups |
+	study := self study.
+	chart := study paperCountsByYearChart.
+	paperGroups := OrderedCollection new.
+	(chart instVarNamed: 'data') groupsDo: [ :eachPlotterGroup |
+		paperGroups add: (study paperGroupFromPlotterDataEntity: eachPlotterGroup) ].
+	self assert: paperGroups size equals: 24.
+	self assert: (paperGroups allSatisfy: [ :each | each isKindOf: VSPaperGroup ]).
+	self assert: (paperGroups select: [ :each | each size = 40 ]) size equals: 1.
+	^ chart
+]
+
+{ #category : 'Examples' }
+VSStudyExamples >> paperCountsByYearChartAllRenderedBarGroupsMapToPaperGroups [
+	<gtExample>
+	| study chart paperGroups |
+	study := self study.
+	chart := study paperCountsByYearChart.
+	paperGroups := OrderedCollection new.
+	(chart instVarNamed: 'data') groupsDo: [ :eachPlotterGroup |
+		paperGroups add: (study paperGroupFromPlotterDataEntity: eachPlotterGroup) ].
+	self assert: paperGroups size equals: 24.
+	self assert: (paperGroups allSatisfy: [ :each | each isKindOf: VSPaperGroup ]).
+	self assert: (paperGroups at: 3) size equals: 40.
+	^ chart asElement
+]
+
+{ #category : 'Examples' }
+VSStudyExamples >> paperCountsByYearChartBarsHavePaperGroups [
+	<gtExample>
+	| chart data |
+	chart := self study paperCountsByYearChart.
+	data := chart instVarNamed: 'data'.
+	self assert: (data values allSatisfy: [ :each | each third isKindOf: VSPaperGroup ]).
+	^ chart
+]
+
+{ #category : 'Examples' }
+VSStudyExamples >> paperCountsByYearChartBarsRetainPaperGroups [
+	<gtExample>
+	| chart chartElement |
+	chart := self study paperCountsByYearChart.
+	chartElement := chart asElement.
+	self assert: chartElement children notEmpty.
+	^ chartElement
+]
+
 { #category : 'examples' }
 VSStudyExamples >> paperGroupReachableAuthorPaperGraph [
 	<gtExample>
