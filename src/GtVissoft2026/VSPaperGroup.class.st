@@ -46,6 +46,21 @@ VSPaperGroup >> authorPaperNodeFor: aModel highlightedPapers: highlightedPapers 
 ]
 
 { #category : 'gt-views' }
+VSPaperGroup >> gtPaperGroupsByYearFor: aView [
+	<gtView>
+	^ aView columnedList
+		title: 'Paper groups by year';
+		priority: 1.1;
+		items: [
+			(self groupedBy: [ :aPaper | aPaper record at: 'Paper Year' ]) associations
+				sorted: [ :anAssociation :anotherAssociation | anAssociation key < anotherAssociation key ] ];
+		column: 'Year' text: [ :anAssociation | anAssociation key ];
+		column: '# of papers' text: [ :anAssociation | anAssociation value size ];
+		send: [ :anAssociation | anAssociation value ];
+		actionUpdateButton
+]
+
+{ #category : 'gt-views' }
 VSPaperGroup >> gtPapersFor: aView [
 	<gtView>
 	^ aView columnedList

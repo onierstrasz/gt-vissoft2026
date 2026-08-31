@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-31T17:15:47.971731+02:00"
+						"dateAndTimeString" : "2026-08-31T17:40:58.497336+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-31T17:15:47.971731+02:00"
+						"dateAndTimeString" : "2026-08-31T17:41:10.289915+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "This could be suitable for a live demo (record it as well)."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -100,14 +100,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-31T17:19:34.773327+02:00"
+						"dateAndTimeString" : "2026-08-31T17:38:33.384054+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "ccJvKcGPTb27cUwdIXjxfg=="
 				},
-				"code" : "chat sendMarkdown: 'Introduce a VSStudy view listing the papers grouped by type. The view should show  the type name and the number of papers. Clicking should navigate to the corresponding paper group.'"
+				"code" : "chat\r\tsendMarkdown: 'Introduce a VSStudy view listing the papers grouped by type. The view should show  the type name and the number of papers. Clicking should navigate to the corresponding paper group. The Paper groups by Type view should appear immediately after the Selected Papers view.'"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -134,14 +134,85 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-31T17:22:29.380135+02:00"
+						"dateAndTimeString" : "2026-08-31T17:38:41.158015+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "H74fMU4wQiKT61Moe6xSOw=="
 				},
-				"code" : "chat sendMarkdown: 'Generate a line graph showing the evolution of the numbers '"
+				"code" : "chat\r\tsendMarkdown: 'Generate a line graph showing the evolution of the numbers of papers of each type by year, leaving out the N/A type. Each type should have a different color. Follow the examples in GtPlotterLineChartExamples.'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T17:42:38.067001+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T17:43:57.247171+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "AW+Om7QOQ0OuRFw+HSYtgQ=="
+				},
+				"code" : "chat\r\tsendMarkdown: 'Add a view to VSPaperGroup immediately after the Papers view showing papers grouped by year. Clicking should navigate to a new paper group with just the papers in that group from that year.'"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T17:44:18.697744+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T17:44:18.697744+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "K35a70E2SwKtoKcPp4rnzg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			}
 		]
 	},

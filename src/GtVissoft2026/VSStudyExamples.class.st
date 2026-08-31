@@ -123,6 +123,18 @@ VSStudyExamples >> paperCountsByYearChartBarsRetainPaperGroups [
 ]
 
 { #category : 'examples' }
+VSStudyExamples >> paperGroupGroupsPapersByYear [
+	<gtExample>
+	| paperGroup groups |
+	paperGroup := VSPaperGroup withAll: self study allPapers values.
+	groups := paperGroup groupedBy: [ :aPaper | aPaper record at: 'Paper Year' ].
+	self assert: (groups at: '2015') class equals: VSPaperGroup.
+	self assert: (groups at: '2015') size equals: 31.
+	self assert: (groups values inject: 0 into: [ :sum :each | sum + each size ]) equals: paperGroup size.
+	^ groups
+]
+
+{ #category : 'examples' }
 VSStudyExamples >> paperGroupReachableAuthorPaperGraph [
 	<gtExample>
 	<return: #GtMondrian>
