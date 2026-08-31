@@ -31,6 +31,15 @@ VSAuthorExamples >> authorPrintsItsName [
 	^ anAuthor
 ]
 
+{ #category : 'Examples' }
+VSAuthorExamples >> initialsForMalformedOrIncompleteNamesAreSafe [
+	<gtExample>
+	| anAuthor |
+	anAuthor := VSAuthor new name: 'Plato'; yourself.
+	self assert: (anAuthor initialsFor: anAuthor) equals: 'P'.
+	^ anAuthor
+]
+
 { #category : 'examples' }
 VSAuthorExamples >> reachableAuthorPaperGraph [
 	<gtExample>

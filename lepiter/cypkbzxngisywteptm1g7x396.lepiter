@@ -209,12 +209,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-08-25T18:36:20.754834+02:00"
+			"dateAndTimeString" : "2026-08-31T10:55:37.459575+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "VISSOFT 2026 Talk"
+		"title" : "VISSOFT 2026 Talk (slideshow)"
 	},
 	"uid" : {
 		"__type" : "uuid",

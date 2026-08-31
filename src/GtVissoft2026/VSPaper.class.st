@@ -260,6 +260,12 @@ VSPaper >> study: aVSStudy [
 ]
 
 { #category : 'accessing' }
+VSPaper >> title [
+	"Answer the paper title from the source record."
+	^ record at: 'Title' ifAbsent: [ '' ]
+]
+
+{ #category : 'accessing' }
 VSPaper >> topic [
 	^ self topicName
 		ifNil: [ nil ]

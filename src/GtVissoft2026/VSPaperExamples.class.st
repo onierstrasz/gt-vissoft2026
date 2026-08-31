@@ -137,6 +137,15 @@ VSPaperExamples >> paperSummaryOrdersTitleAndAuthorsAndHidesNumericAttributes [
 	^ aPaper
 ]
 
+{ #category : 'Examples' }
+VSPaperExamples >> paperTitleIsAvailableThroughAnAccessor [
+	<gtExample>
+	| aPaper |
+	aPaper := self paperPrintsItsTitle.
+	self assert: aPaper title equals: (aPaper record at: 'Title').
+	^ aPaper
+]
+
 { #category : 'examples' }
 VSPaperExamples >> reachableAuthorPaperGraph [
 	<gtExample>

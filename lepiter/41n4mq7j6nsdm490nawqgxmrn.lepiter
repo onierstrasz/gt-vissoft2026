@@ -209,7 +209,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-25T18:34:58.770207+02:00"
+									"dateAndTimeString" : "2026-08-31T10:54:45.278332+02:00"
 								}
 							},
 							"editEmail" : {
@@ -220,17 +220,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-25T18:34:58.770207+02:00"
+									"dateAndTimeString" : "2026-08-31T10:54:45.278332+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "mJS4iHZaRFmmPpjrDBtg1w=="
+								"uidString" : "MmR5/5V0QLSmmYbjNbxBAA=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Towards Actionable Visualization — notes]]"
+							"string" : "[[Cleaning code]]"
 						}
 					]
 				},
@@ -264,6 +264,80 @@
 					"__type" : "textStyle"
 				},
 				"string" : "[[VISSOFT 2026 Demo]]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-25T18:34:58.770207+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-25T18:34:58.770207+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "mJS4iHZaRFmmPpjrDBtg1w=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[Towards Actionable Visualization — notes]]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T10:55:06.521391+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-31T10:55:37.46976+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "+AbxS6nfRrOW9j1sP7ktVw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[VISSOFT 2026 Talk (slideshow)]]"
 			},
 			{
 				"__type" : "textSnippet",

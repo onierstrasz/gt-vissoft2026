@@ -103,13 +103,21 @@ VSAuthor >> initialize [
 	papers := OrderedCollection new
 ]
 
-{ #category : 'visualizing' }
+{ #category : 'accessing' }
 VSAuthor >> initialsFor: anAuthor [
-	| nameParts surname givenNames |
+	"Answer available given-name and surname initials for a name formatted as 'Surname, Given names'."
+	| nameParts surname givenNames givenLetters surnameLetters |
 	nameParts := anAuthor name substrings: ','.
-	surname := nameParts first trimBoth.
+	surname := nameParts first ifNil: [ '' ].
 	givenNames := nameParts allButFirst joinUsing: ' '.
-	^ (givenNames select: #isLetter) first asString , (surname select: #isLetter) first asString
+	givenLetters := givenNames select: #isLetter.
+	surnameLetters := surname select: #isLetter.
+	^ (givenLetters
+		ifEmpty: [ '' ]
+		ifNotEmpty: [ givenLetters first asString ])
+		, (surnameLetters
+			ifEmpty: [ '' ]
+			ifNotEmpty: [ surnameLetters first asString ])
 ]
 
 { #category : 'accessing' }
