@@ -26,23 +26,17 @@ VSStudy >> authorNamed: aName [
 			yourself ]
 ]
 
-{ #category : 'visualizing' }
+{ #category : 'graphing' }
 VSStudy >> authorPaperGraphIn: aMondrian [
 	"Visualize only Design Study papers and authors of those papers."
 	| designStudyPapers designStudyAuthors |
 	designStudyPapers := self allPapers values select: #isDesignStudy.
 	designStudyAuthors := (designStudyPapers flatCollect: #authors) asIdentitySet.
-	aMondrian nodes
-		stencil: [ :aModel | self authorPaperNodeFor: aModel ];
-		with: (designStudyPapers asArray , designStudyAuthors asArray).
-	designStudyAuthors do: [ :anAuthor |
-		aMondrian edges
-			connect: (anAuthor papers select: [ :aPaper | designStudyPapers includes: aPaper ])
-			from: [ :aPaper | anAuthor ]
-			to: [ :aPaper | aPaper ] ].
-	aMondrian layout custom: (GtGraphForceBasedLayout new
-		charge: -2000;
-		length: 200)
+	(VSPaperGroup withAll: designStudyPapers)
+		renderAuthorPaperGraphIn: aMondrian
+		papers: designStudyPapers
+		authors: designStudyAuthors
+		nodeStencil: [ :aModel | self authorPaperNodeFor: aModel ]
 ]
 
 { #category : 'visualizing' }

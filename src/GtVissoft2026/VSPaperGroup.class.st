@@ -83,17 +83,11 @@ VSPaperGroup >> reachableAuthorPaperGraphIn: aMondrian [
 	papers := component key.
 	authors := component value.
 	highlightedPapers := self items asIdentitySet.
-	aMondrian nodes
-		stencil: [ :aModel | self authorPaperNodeFor: aModel highlightedPapers: highlightedPapers ];
-		with: (papers asArray , authors asArray).
-	authors do: [ :anAuthor |
-		aMondrian edges
-			connect: (anAuthor papers select: [ :aPaper | papers includes: aPaper ])
-			from: [ :aPaper | anAuthor ]
-			to: [ :aPaper | aPaper ] ].
-	aMondrian layout custom: (GtGraphForceBasedLayout new
-		charge: -2000;
-		length: 200)
+	self
+		renderAuthorPaperGraphIn: aMondrian
+		papers: papers
+		authors: authors
+		nodeStencil: [ :aModel | self authorPaperNodeFor: aModel highlightedPapers: highlightedPapers ]
 ]
 
 { #category : 'graphing' }
@@ -112,4 +106,20 @@ VSPaperGroup >> reachablePaperAuthorComponent [
 					papers add: anotherPaper.
 					pendingPapers add: anotherPaper ] ] ] ].
 	^ papers -> authors
+]
+
+{ #category : 'graphing' }
+VSPaperGroup >> renderAuthorPaperGraphIn: aMondrian papers: papers authors: authors nodeStencil: aStencil [
+	"Render the common bipartite author-paper topology with caller-supplied node presentation."
+	aMondrian nodes
+		stencil: aStencil;
+		with: (papers asArray , authors asArray).
+	authors do: [ :anAuthor |
+		aMondrian edges
+			connect: (anAuthor papers select: [ :aPaper | papers includes: aPaper ])
+			from: [ :aPaper | anAuthor ]
+			to: [ :aPaper | aPaper ] ].
+	aMondrian layout custom: (GtGraphForceBasedLayout new
+		charge: -2000;
+		length: 200)
 ]

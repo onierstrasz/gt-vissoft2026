@@ -33,25 +33,19 @@ VSPaper >> authorNames [
 		thenSelect: [ :aName | aName isNotEmpty ]
 ]
 
-{ #category : 'visualizing' }
+{ #category : 'graphing' }
 VSPaper >> authorPaperGraphIn: aMondrian papers: papers authors: authors startingPaper: aStartingPaper connectStartingPaper: shouldConnectStartingPaper [
-	"Render a paper/author graph using the supplied paper and author collections."
-	aMondrian nodes
-		stencil: [ :aModel | self authorPaperNodeFor: aModel startingPaper: aStartingPaper ];
-		with: (papers asArray , authors asArray).
+	"Render a paper-author graph using the supplied paper and author collections."
 	shouldConnectStartingPaper ifTrue: [
 		aMondrian edges
 			connect: authors
 			from: [ :anAuthor | self ]
 			to: [ :anAuthor | anAuthor ] ].
-	authors do: [ :anAuthor |
-		aMondrian edges
-			connect: (anAuthor papers select: [ :aPaper | papers includes: aPaper ])
-			from: [ :aPaper | anAuthor ]
-			to: [ :aPaper | aPaper ] ].
-	aMondrian layout custom: (GtGraphForceBasedLayout new
-		charge: -2000;
-		length: 200)
+	(VSPaperGroup withAll: papers)
+		renderAuthorPaperGraphIn: aMondrian
+		papers: papers
+		authors: authors
+		nodeStencil: [ :aModel | self authorPaperNodeFor: aModel startingPaper: aStartingPaper ]
 ]
 
 { #category : 'visualizing' }

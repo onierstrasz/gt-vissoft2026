@@ -18,20 +18,14 @@ VSAuthor >> addPaper: aVSPaper [
 	papers addIfNotPresent: aVSPaper
 ]
 
-{ #category : 'visualizing' }
+{ #category : 'graphing' }
 VSAuthor >> authorPaperGraphIn: aMondrian papers: papers authors: authors [
 	"Render a paper-author graph, emphasizing this author as its starting node."
-	aMondrian nodes
-		stencil: [ :aModel | self authorPaperNodeFor: aModel ];
-		with: (papers asArray , authors asArray).
-	authors do: [ :anAuthor |
-		aMondrian edges
-			connect: (anAuthor papers select: [ :aPaper | papers includes: aPaper ])
-			from: [ :aPaper | anAuthor ]
-			to: [ :aPaper | aPaper ] ].
-	aMondrian layout custom: (GtGraphForceBasedLayout new
-		charge: -2000;
-		length: 200)
+	(VSPaperGroup withAll: papers)
+		renderAuthorPaperGraphIn: aMondrian
+		papers: papers
+		authors: authors
+		nodeStencil: [ :aModel | self authorPaperNodeFor: aModel ]
 ]
 
 { #category : 'visualizing' }
@@ -140,20 +134,20 @@ VSAuthor >> printOn: aStream [
 	aStream nextPutAll: self name
 ]
 
-{ #category : 'visualizing' }
+{ #category : 'graphing' }
 VSAuthor >> reachableAuthorPaperGraphIn: aMondrian [
 	"Visualize the complete paper-author connected component containing this author without modifying its paper collection."
-	| papers authors pendingPapers aPaper |
-	papers := self papers asIdentitySet.
-	authors := IdentitySet with: self.
+	| reachablePapers reachableAuthors pendingPapers aReachablePaper |
+	reachablePapers := self papers asIdentitySet.
+	reachableAuthors := IdentitySet with: self.
 	pendingPapers := self papers copy asOrderedCollection.
 	[ pendingPapers isEmpty ] whileFalse: [
-		aPaper := pendingPapers removeFirst.
-		aPaper authors do: [ :anAuthor |
-			authors add: anAuthor.
+		aReachablePaper := pendingPapers removeFirst.
+		aReachablePaper authors do: [ :anAuthor |
+			reachableAuthors add: anAuthor.
 			anAuthor papers do: [ :anotherPaper |
-				(papers includes: anotherPaper) ifFalse: [
-					papers add: anotherPaper.
+				(reachablePapers includes: anotherPaper) ifFalse: [
+					reachablePapers add: anotherPaper.
 					pendingPapers add: anotherPaper ] ] ] ].
-	self authorPaperGraphIn: aMondrian papers: papers authors: authors
+	self authorPaperGraphIn: aMondrian papers: reachablePapers authors: reachableAuthors
 ]
