@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-25T18:32:36.524019+02:00"
+						"dateAndTimeString" : "2026-09-01T16:52:05.771046+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We'd like to use the data from the [2016 paper](https://scg.unibe.ch/assets/scgbib/?query=Meri16a) and the [2017 journal paper](https://scg.unibe.ch/assets/scgbib/?query=Meri17a)as a running example for the [[VISSOFT 2026 Demo]] talk.\nSee the [replication package](https://scg.unibe.ch/research/visualisation-review).\nThe UTF-8 CSV link: [](https://scg.unibe.ch/download/merino/review-vissoft/dataset-utf8.zip)."
+				"string" : "We'd like to use the data from the [2016 paper](https://scg.unibe.ch/assets/scgbib/?query=Meri16a) and the [2017 journal paper](https://scg.unibe.ch/assets/scgbib/?query=Meri17a)as a running example for the VISSOFT 2026 Demo talk.\nSee the [replication package](https://scg.unibe.ch/research/visualisation-review).\nThe UTF-8 CSV link: [](https://scg.unibe.ch/download/merino/review-vissoft/dataset-utf8.zip)."
 			},
 			{
 				"__type" : "pharoSnippet",
