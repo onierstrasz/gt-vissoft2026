@@ -119,6 +119,14 @@ VSLoadSnapshot >> oneShotModelGeneration [
 ]
 
 { #category : 'examples' }
+VSLoadSnapshot >> oneShotModelGenerationWithClutteredMondrian [
+	"Not a really nice result to show ..."
+	<gtExample>
+	<noTest>
+	^ self fileIn: 'VISSOFT-1shot-model-with-cluttered-mondrian.st'
+]
+
+{ #category : 'examples' }
 VSLoadSnapshot >> vsPackage [
 	<gtExample>
 	<noTest>

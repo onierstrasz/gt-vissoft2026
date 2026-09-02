@@ -509,6 +509,43 @@
 							"code" : "chat := GtL gt\r\t\tmarkdownResponse;\r\t\tgtPageExplanation: 'Drawing graphs with Mondrian by example';\r\t\tgtPageExplanation: 'Tutorial: molding CSV data into an explainable system'"
 						},
 						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-02T18:37:23.146725+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-02T18:40:09.352598+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ZmwUZQchQhexG43NSpxfew=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "This is too ambitious — it takes a long time to complete and the result is cluttered."
+						},
+						{
 							"__type" : "pharoSnippet",
 							"children" : {
 								"__type" : "snippets",
@@ -533,14 +570,122 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-09-02T18:30:16.289597+02:00"
+									"dateAndTimeString" : "2026-09-02T18:31:54.65115+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "pK/iXnLGT4aVmDGYKm2kRA=="
 							},
-							"code" : "chat\r\tsendMarkdown: 'Create a Mondrian graph of Design study papers, and recursively reachable authors of those papers, and other papers they have published in this dataset. Represent each author as a light blue square with size proportional to the number of authored papers, and with authors initials (given name and surname) as the (centred) label. Hovering over the author box should show the full author name. Represent papers as light pink circles with their size proportional to the number of authors. Design study papers should have a red border. Hovering over a paper will show its title. Clicking on a node will navigate to the corresponding paper or author.'"
+							"code" : "chat\r\tsendMarkdown: 'Create a Mondrian graph of Design study papers in the VISSOFT package, and recursively reachable authors of those papers, and other papers they have published in this dataset. Represent each author as a light blue square with size proportional to the number of authored papers, and with authors initials (given name and surname) as the (centred) label. Hovering over the author box should show the full author name. Represent papers as light pink circles with their size proportional to the number of authors. Design study papers should have a red border. Hovering over a paper will show its title. Clicking on a node will navigate to the corresponding paper or author.'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-02T18:40:17.50275+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-02T18:40:25.381614+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "e6GFe6PTQRWmFTGW7DOnUQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Just for the record, here is the result ..."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-02T18:42:02.163877+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-02T18:42:03.733688+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "9Hi78YhsT4Sp2tEncJLjPQ=="
+							},
+							"code" : "VSLoadSnapshot new oneShotModelGeneration.\r#VISSOFTDatasetExamples asClass new dataset"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-02T18:38:51.303958+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-02T18:39:10.921094+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ihqLqssDRhmkqBiSE3ji8w=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We need a smaller Mondrian task that can be demoed live."
 						}
 					]
 				},
