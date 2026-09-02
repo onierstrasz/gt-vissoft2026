@@ -38,6 +38,15 @@ VSLoadSnapshot >> incrementalFullModel [
 ]
 
 { #category : 'as yet unclassified' }
+VSLoadSnapshot >> incrementalFullModelWithoutMondrianGraphs [
+	"Same as incrementalFullModel but without the Mondrian graphs and views."
+
+	<gtExample>
+	<noTest>
+	^ self fileIn: 'VISSOFT-model-without-mondrian-views.st'
+]
+
+{ #category : 'as yet unclassified' }
 VSLoadSnapshot >> oneShotModelGeneration [
 	<gtExample>
 	<noTest>

@@ -129,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-31T15:38:10.18648+02:00"
+						"dateAndTimeString" : "2026-09-02T17:11:23.223823+02:00"
 					}
 				},
 				"editEmail" : {
@@ -140,14 +140,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-31T17:13:23.898915+02:00"
+						"dateAndTimeString" : "2026-09-02T17:11:33.285649+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "KeCTd2dJQlu/YdbCVndhTQ=="
+					"uidString" : "Gj+sq3rGT3qGC25tcbI3ew=="
 				},
-				"code" : "VSStudyExamples new study"
+				"code" : "VSLoadSnapshot new incrementalFullModel.\r#VSStudyExamples asClass new study"
 			},
 			{
 				"__type" : "textSnippet",
