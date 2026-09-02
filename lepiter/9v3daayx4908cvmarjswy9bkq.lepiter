@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-01T17:02:13.725588+02:00"
+						"dateAndTimeString" : "2026-09-02T18:09:33.186898+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-01T17:03:06.578801+02:00"
+						"dateAndTimeString" : "2026-09-02T18:09:38.829725+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "zlHVNgWcQ268ZIr0P7NmEQ=="
+					"uidString" : "go29BzDER3CQWI0aekqRBA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "For the demo, we would like to contrast raw visualization without a model and with a model.\nWe already had some first experience with the [[First exploration of the Actionable Visualization replication package]]. \nLet's try to turn this into a repeatable demo."
+				"string" : "We clear the slate."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-02T18:09:26.103887+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-02T18:09:27.907882+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "BxMjXGXsRVmwScIWD5WSzQ=="
+				},
+				"code" : "VSLoadSnapshot new clearVSPackage"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +89,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-01T17:21:15.45237+02:00"
+						"dateAndTimeString" : "2026-09-02T18:10:12.749428+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +100,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-01T17:21:40.199799+02:00"
+						"dateAndTimeString" : "2026-09-02T18:10:17.522557+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "ELbZjfUMTUC7mgGOlQ6M9g=="
+					"uidString" : "/MWtpVFyTCa9/Jpr7BZQqw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We want the LLM to work directly with the raw CSV files first."
+				"string" : "We create a basic chat."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -92,7 +126,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-01T17:04:53.852366+02:00"
+						"dateAndTimeString" : "2026-09-02T18:10:23.852395+02:00"
 					}
 				},
 				"editEmail" : {
@@ -103,14 +137,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-01T17:05:48.802695+02:00"
+						"dateAndTimeString" : "2026-09-02T18:11:22.749885+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "APZYORw5QH2ZhAACB7qYBw=="
+					"uidString" : "lLxcpTQiQm6dWHdWz/G+rA=="
 				},
-				"code" : "FileLocator gtResource / 'onierstrasz/gt-vissoft2026/data'"
+				"code" : "chat := GtL chat\r\t\ttools: GtLTools gtObjectsExecution;\r\t\tsendMarkdown: 'There are two CSV files in the folder returned by `FileLocator gtResource / ''feenkcom/gtoolkit-demos/data/visualisation-review''` describing a dataset of software visualization papers. Analyze the contents and generate a visualization of the evolution of Design Study papers vs other papers over the years.'"
 			},
 			{
 				"__type" : "textSnippet",
@@ -126,7 +160,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-01T17:11:42.424996+02:00"
+						"dateAndTimeString" : "2026-09-02T18:16:20.530438+02:00"
 					}
 				},
 				"editEmail" : {
@@ -137,20 +171,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-01T17:11:46.91447+02:00"
+						"dateAndTimeString" : "2026-09-02T18:16:28.473312+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "9nO5JZ1LS5SxwulxF4QkaQ=="
+					"uidString" : "aPRyl6XlTPiHhYHoSbazqw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We need a chat with tools."
+				"string" : "One of the results we get is this one:"
 			},
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "exampleSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -163,7 +197,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-01T17:03:10.546976+02:00"
+						"dateAndTimeString" : "2026-09-02T18:16:34.356691+02:00"
 					}
 				},
 				"editEmail" : {
@@ -174,119 +208,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-01T17:12:47.252955+02:00"
+						"dateAndTimeString" : "2026-09-02T18:16:34.356691+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "dvnWYl9hQHyoReFKdGjXnA=="
+					"uidString" : "NoUtK9J0Se6TJqUJ2zRORw=="
 				},
-				"code" : "chat := GtL gt."
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-01T17:04:35.941021+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-01T17:20:36.593139+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "/NtGf4akREqNcp7lDqSGRA=="
-				},
-				"code" : "chat sendMarkdown: 'There are two CSV files in the local folder `FileLocator gtResource / ''onierstrasz/gt-vissoft2026/data''`. Describe their contents.'"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-01T17:21:44.233459+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-01T17:24:13.105877+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "5JM7aN2vS/6SctUi2XiGFQ=="
-				},
-				"code" : "chat sendMarkdown: 'Produce a Treemap visualization breaking down the papers by years, and for each year the different types of papers, highlighting Design Study papers in red.'"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-01T17:29:23.526097+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-01T17:30:07.195984+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "iPVl5CSLQ4ilsx29PpFB6Q=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "This works too well. The LLM finds the VSStudy classes and implemented a model-based solution. We need to run this in a clean image."
+				"exampleSelector" : "barChartWithoutModel",
+				"previewHeight" : 200,
+				"previewShowSelector" : "gtLiveFor:",
+				"exampleBehaviorName" : "VSLoadSnapshot",
+				"codeExpanded" : true,
+				"previewExpanded" : false,
+				"noCode" : true
 			}
 		]
 	},
@@ -298,7 +233,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-09-01T17:02:11.638576+02:00"
+			"dateAndTimeString" : "2026-09-02T18:08:59.521893+02:00"
 		}
 	},
 	"editEmail" : {
@@ -309,7 +244,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-09-01T17:02:11.638576+02:00"
+			"dateAndTimeString" : "2026-09-02T18:08:59.521893+02:00"
 		}
 	},
 	"pageType" : {
@@ -318,6 +253,6 @@
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "5da82f54-7181-476d-a1d4-e6c0561651e4"
+		"uuid" : "da048a4e-175a-4b3f-a88c-82e8ef239ca6"
 	}
 }
