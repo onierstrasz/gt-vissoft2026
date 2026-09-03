@@ -14,20 +14,6 @@ VSFiles >> allCSV [
 ]
 
 { #category : 'examples' }
-VSFiles >> chatGptVisualizationJPG [
-	<gtExample>
-	<noTest>
-	^ self filesFolder / 'Visualise Design Study Evolution - ChatGPT.jpg'
-]
-
-{ #category : 'examples' }
-VSFiles >> chatGptVisualizationJpgWithExplanation [
-	<gtExample>
-	<noTest>
-	^ self filesFolder / 'Visualise Design Study Evolution - ChatGPT-withExplanation.jpg'
-]
-
-{ #category : 'examples' }
 VSFiles >> chatGptVisualizationPDF [
 	<gtExample>
 	<noTest>
@@ -35,10 +21,10 @@ VSFiles >> chatGptVisualizationPDF [
 ]
 
 { #category : 'examples' }
-VSFiles >> chatGptVisualizationPrompt [
+VSFiles >> chatGptVisualizationPNG [
 	<gtExample>
 	<noTest>
-	^ self filesFolder / 'Visualise Design Study Evolution - ChatGPT - prompt.jpg'
+	^ self imageFolder / 'Visualise Design Study Evolution - ChatGPT-prompt+result.png'
 ]
 
 { #category : 'examples' }
@@ -73,6 +59,15 @@ VSFiles >> geminiVisualizationPDF [
 	<gtExample>
 	<noTest>
 	^ self filesFolder / 'Software Visualization Paper Evolution Analysis - Google Gemini.pdf'
+]
+
+{ #category : 'examples' }
+VSFiles >> imageFolder [
+	"PNG files for the slideshow."
+
+	<gtExample>
+	<noTest>
+	^ self repoFolder / 'images'
 ]
 
 { #category : 'examples' }

@@ -386,7 +386,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2026-09-03T16:20:27.796174+02:00"
+												"dateAndTimeString" : "2026-09-03T16:54:05.35257+02:00"
 											}
 										},
 										"editEmail" : {
@@ -397,7 +397,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2026-09-03T16:23:32.500071+02:00"
+												"dateAndTimeString" : "2026-09-03T16:54:05.759364+02:00"
 											}
 										},
 										"uid" : {
@@ -407,7 +407,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[An LLM can easily generate standard visualizations]]"
+										"string" : "..."
 									}
 								]
 							},

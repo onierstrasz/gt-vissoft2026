@@ -397,7 +397,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2026-09-03T16:20:33.476955+02:00"
+												"dateAndTimeString" : "2026-09-03T16:23:32.500071+02:00"
 											}
 										},
 										"uid" : {
@@ -407,7 +407,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[ChatGPT visualization]]"
+										"string" : "[[An LLM can easily generate standard visualizations]]"
 									}
 								]
 							},
