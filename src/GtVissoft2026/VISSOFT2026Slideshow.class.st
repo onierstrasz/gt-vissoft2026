@@ -7,23 +7,32 @@ Class {
 }
 
 { #category : 'slides' }
-VISSOFT2026Slideshow >> approaches: aSlide [
+VISSOFT2026Slideshow >> buildingAModel: aSlide [
 	<gtSlide>
 	<text:
-'TODO: summarize the key ideas as bullet points # Approaches
-Build a navigable model first.
-Have cheap, composable visualization engine.
-Model and visualize the LLM interactions and actions themselves. 
-Enable the LLM to see and interpret the generated views.'>
+'# Building a domain model
+
+We have the CSV data. We have documented experience building a domain model from raw data. We also have documented experience (design patterns) in constructing cheap, composable views on top of the model.
+
+We feed this documentation to the LLM and let it build the model.
+'>
 <demo:
-''>
-	^ aSlide paragraph
+'- The slide starts with an empty package.
+- Show the tools and the documentation.
+- Discuss the prompt.
+- Run the prompt and explore the actions.
+- Show the created classes.
+- Run the tests.
+- Explore the dataset instance and see how we can navigate.
+- In case the result is partially broken, file in the saved version.
+- Show how the views are cheap to implement and easy to navigate.
+
+'>
+		VSLoadSnapshot new clearVSPackage.
+		^ aSlide lepiterPage
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Approaches');
-		paragraphWithFormat: (self
-				asText: 
-'
-')
+		pageNamed: 'Building a domain model from the raw CSV data' from: 'VISSOFT 2026';
+		yourself
 ]
 
 { #category : 'slides' }
@@ -106,6 +115,31 @@ We build a Mondrian graph. Instead of being just a picture, it is navigable and 
 ]
 
 { #category : 'slides' }
+VISSOFT2026Slideshow >> howToTrustAnLLM: aSlide [
+	<gtSlide>
+	<text:
+'# How to build trust in an LLM
+
+— Model the domain — don''t just work with raw data.
+— Extend the model with composable views — views should be cheap to create, and enable navigation through the model
+— Model the Chat — expose the LLM interactions using composable views
+— Expose views to the LLM  — enable the LLM to see and interpret the generated views.'>
+<demo:
+''>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'How to build trust in an LLM');
+		paragraphWithFormat: (self
+				asText: 
+'
+— Model the domain
+— Extend the model with cheap, composable views
+— Model the Chat
+— Expose views to the LLM
+')
+]
+
+{ #category : 'slides' }
 VISSOFT2026Slideshow >> interpretingResults: aSlide [
 	<gtSlide>
 	<text:
@@ -184,7 +218,9 @@ VISSOFT2026Slideshow >> slidePriorities [
 		title:
 		thenAndNow:
 		theTroubleWithAI:
-		approaches:
+		howToTrustAnLLM:
+		buildingAModel:
+		
 		caseStudy:
 		reifyingChats:
 		codeChanges:
@@ -236,7 +272,7 @@ VISSOFT2026Slideshow >> template: aSlide [
 { #category : 'slides' }
 VISSOFT2026Slideshow >> theTroubleWithAI: aSlide [
 	<gtSlide>
-	<text: 'TODO: visualization without a model # The Trouble with AI
+	<text: 'TODO: Discuss the ChatGPT line graph issues # The Trouble with AI
 
 (Say something about "AI" vs "LLM")
 
