@@ -47,6 +47,24 @@ TO DO — can we demo the model creation?'>
 ')
 ]
 
+{ #category : 'page' }
+VISSOFT2026Slideshow >> chaGptVisualizationPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'A dynamic Lepiter page')
+		addSnippet: (LeTextSnippet new
+				string: 'This page is dynamically created and stored in a transient Lepiter database.';
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: 'A link to [[Another dynamic page]].';
+				yourself);
+		addSnippet: (LePharoSnippet new
+				code: '''hello''';
+				yourself);
+		yourself
+]
+
 { #category : 'slides' }
 VISSOFT2026Slideshow >> codeChanges: aSlide [
 	<gtSlide>
@@ -63,24 +81,6 @@ TO DO — need a code change scenario. Refactoring?'>
 				asText: 
 '
 ')
-]
-
-{ #category : 'page' }
-VISSOFT2026Slideshow >> dynamicLePage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'A dynamic Lepiter page')
-		addSnippet: (LeTextSnippet new
-				string: 'This page is dynamically created and stored in a transient Lepiter database.';
-				yourself);
-		addSnippet: (LeTextSnippet new
-				string: 'A link to [[Another dynamic page]].';
-				yourself);
-		addSnippet: (LePharoSnippet new
-				code: '''hello''';
-				yourself);
-		yourself
 ]
 
 { #category : 'slides' }
@@ -146,6 +146,13 @@ Line graph? Tree map?'>
 				asText: 
 '
 ')
+]
+
+{ #category : 'as yet unclassified' }
+VISSOFT2026Slideshow >> picturesDirectoryPath [
+	"Default path may be overridden"
+
+	^ Path * 'onierstrasz' / 'gt-vissoft2026' / 'images'
 ]
 
 { #category : 'slides' }
@@ -229,8 +236,7 @@ VISSOFT2026Slideshow >> template: aSlide [
 { #category : 'slides' }
 VISSOFT2026Slideshow >> theTroubleWithAI: aSlide [
 	<gtSlide>
-	<text:
-'TODO: visualization without a model # The Trouble with AI
+	<text: 'TODO: visualization without a model # The Trouble with AI
 
 (Say something about "AI" vs "LLM")
 
@@ -239,20 +245,25 @@ Do we understand it? Do we trust it?
 Show a visualization built by a standard tool.
 TO DO try with chatGPT or Gemini
 
+We can show the ChatGPT prompt and visualization.
+
 Issues
 How did it do the work (in detail)?
 Does the visualization truly reflect the data?
 What is the underlying model?
 How do we interpret the result? What can we do with it?'>
-<demo:
-''>
-	^ aSlide paragraph
+	<demo: ''>
+	^ aSlide textAndElement
+		elementWeight: 0.60;
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Visualization without a model');
-		paragraphWithFormat: (self
-				asText: 
-'
-')
+		newTextWithFormat: (self
+				asText: 'ChatGPT (-5.6 Luna) can easily visualize the data:
+
+... but ') , (self asText: 'do we trust it?') italic;
+		element: [ GtFilePictureLiveSlide new
+				fileReference: (GtResourcesUtility
+						resourceAtPath: self picturesDirectoryPath
+								/ 'Visualise Design Study Evolution - ChatGPT-prompt+result.png') ]
 ]
 
 { #category : 'slides' }
@@ -283,8 +294,10 @@ VISSOFT2026Slideshow >> title: aSlide [
 	<gtSlide>
 <text:
 'TODO: write up intro text # Towards Actionable Visualization: Ten Years Later
-
 What Generative AI Changes and What It Cannot.
+
+
+
 '>
 	^ (aSlide titleWithFooters)
 		setPriority;

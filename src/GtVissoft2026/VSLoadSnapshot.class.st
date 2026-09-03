@@ -84,15 +84,8 @@ VSLoadSnapshot >> clearVSPackage [
 { #category : 'helper' }
 VSLoadSnapshot >> fileIn: fileOutName [
 	self clearVSPackage.
-	(self fileOutsFolder / fileOutName) fileIn.
+	(VSFiles new fileOutsFolder / fileOutName) fileIn.
 	^ self vsPackage
-]
-
-{ #category : 'examples' }
-VSLoadSnapshot >> fileOutsFolder [
-	<gtExample>
-	<noTest>
-	^ FileLocator gtResource / 'onierstrasz' / 'gt-vissoft2026' / 'fileOuts'
 ]
 
 { #category : 'examples' }
