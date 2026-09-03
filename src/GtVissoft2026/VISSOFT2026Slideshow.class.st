@@ -10,7 +10,7 @@ Class {
 VISSOFT2026Slideshow >> approaches: aSlide [
 	<gtSlide>
 	<text:
-'TODO # Approaches
+'TODO: summarize the key ideas as bullet points # Approaches
 Build a navigable model first.
 Have cheap, composable visualization engine.
 Model and visualize the LLM interactions and actions themselves. 
@@ -19,7 +19,7 @@ Enable the LLM to see and interpret the generated views.'>
 ''>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Temaplte');
+		subtitleWithFormat: (self asSubtitle: 'Approaches');
 		paragraphWithFormat: (self
 				asText: 
 '
@@ -30,7 +30,7 @@ Enable the LLM to see and interpret the generated views.'>
 VISSOFT2026Slideshow >> caseStudy: aSlide [
 	<gtSlide>
 	<text:
-'TODO # Case study — the 2016 dataset.
+'TODO: introduce the case study; generate and show the model; show the cheap views # Case study — the 2016 dataset.
 Build a model, proving detailed instructions (no magic). 
 Add basic visualizations (views). 
 Views are simple, cheap, composable and navigable.
@@ -40,7 +40,7 @@ TO DO — can we demo the model creation?'>
 ''>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Temaplte');
+		subtitleWithFormat: (self asSubtitle: 'Building a model');
 		paragraphWithFormat: (self
 				asText: 
 '
@@ -51,14 +51,14 @@ TO DO — can we demo the model creation?'>
 VISSOFT2026Slideshow >> codeChanges: aSlide [
 	<gtSlide>
 	<text:
-'TODO # Code Changes
+'TODO: show how the result of a chat can be explorable diffs # Code Changes
 Code changes can also be visualized and explored.
 TO DO — need a code change scenario. Refactoring?'>
 <demo:
 ''>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Temaplte');
+		subtitleWithFormat: (self asSubtitle: 'Modeling code changes');
 		paragraphWithFormat: (self
 				asText: 
 '
@@ -87,13 +87,18 @@ VISSOFT2026Slideshow >> dynamicLePage [
 VISSOFT2026Slideshow >> generatingVisualizations: aSlide [
 	<gtSlide>
 	<text:
-'TODO # Generating visualizations
+'TODO: show the generated mondrian graphs # Generating visualizations
+
+Can we demo the construction?
+
+Key point: model-based, not just a picture
+
 We build a Mondrian graph. Instead of being just a picture, it is navigable and is just an extension to the model.'>
 <demo:
 ''>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Temaplte');
+		subtitleWithFormat: (self asSubtitle: 'Generating a graph visualization');
 		paragraphWithFormat: (self
 				asText: 
 '
@@ -104,16 +109,18 @@ We build a Mondrian graph. Instead of being just a picture, it is navigable and 
 VISSOFT2026Slideshow >> interpretingResults: aSlide [
 	<gtSlide>
 	<text:
-'TODO # LLM interpreting the results
-The LLM can also leverage the views.
+'TODO: show how the LLM can access and interpret a view # LLM interpreting the results
+
 TO DO — need a good demo. 
+
+The LLM can also leverage the views.
 Ask it to assess the goal from the abstract. 
 '>
 <demo:
 ''>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Temaplte');
+		subtitleWithFormat: (self asSubtitle: 'LLMs interpreting views');
 		paragraphWithFormat: (self
 				asText: 
 '
@@ -124,7 +131,9 @@ Ask it to assess the goal from the abstract.
 VISSOFT2026Slideshow >> otherVisualizations: aSlide [
 	<gtSlide>
 	<text:
-'TODO # Other visualizations?
+'TODO: prepare a list of example to show if we have time ... # Other visualizations?
+
+Can we demo the construction?
 Bar graph?
 Do we have a decent bar graph example?
 Line graph? Tree map?'>
@@ -143,13 +152,17 @@ Line graph? Tree map?'>
 VISSOFT2026Slideshow >> reifyingChats: aSlide [
 	<gtSlide>
 	<text:
-'TODO # Reifying the chat
+'TODO: show the steps of the process (fold into previous?) # Reifying the chat
+
+Do we need a separate slide for this?
+Can we show this in the previous slide?
+
 The generation process is itself modeled, visualized and navigable.'>
 <demo:
 ''>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Temaplte');
+		subtitleWithFormat: (self asSubtitle: 'Reifying the chat');
 		paragraphWithFormat: (self
 				asText: 
 '
@@ -163,7 +176,7 @@ VISSOFT2026Slideshow >> slidePriorities [
 	^ #(
 		title:
 		thenAndNow:
-		whereAreWe:
+		theTroubleWithAI:
 		approaches:
 		caseStudy:
 		reifyingChats:
@@ -180,7 +193,12 @@ VISSOFT2026Slideshow >> summary: aSlide [
 	<gtSlide>
 	<text:
 'TODO # Conclusions 
-TO DO'>
+TO DO
+
+End with a bullet list or a view of chat?
+Ask a Chat to summarize?
+
+'>
 <demo:
 ''>
 	^ aSlide paragraph
@@ -194,14 +212,14 @@ TO DO'>
 
 { #category : 'slides' }
 VISSOFT2026Slideshow >> template: aSlide [
-	"<gtSlide>"
+	<gtSlide>
 	<text:
 '# TEMPLATE'>
 <demo:
 ''>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Temaplte');
+		subtitleWithFormat: (self asSubtitle: 'Template');
 		paragraphWithFormat: (self
 				asText: 
 '
@@ -209,49 +227,13 @@ VISSOFT2026Slideshow >> template: aSlide [
 ]
 
 { #category : 'slides' }
-VISSOFT2026Slideshow >> thenAndNow: aSlide [
+VISSOFT2026Slideshow >> theTroubleWithAI: aSlide [
 	<gtSlide>
 	<text:
-'TODO # Then and now
+'TODO: visualization without a model # The Trouble with AI
 
-Ten years ago ... what has changed?
-Do AIs / LLMs solve the visualization problem?
-Main issues: trust, interpretation 
+(Say something about "AI" vs "LLM")
 
-'>
-<demo:
-''>
-	^ aSlide paragraph
-		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Temaplte');
-		paragraphWithFormat: (self
-				asText: 
-'
-')
-]
-
-{ #category : 'slides' }
-VISSOFT2026Slideshow >> title: aSlide [
-	<gtSlide>
-<text:
-'TODO # Towards Actionable Visualization: Ten Years Later
-
-What Generative AI Changes and What It Cannot.
-'>
-	^ (aSlide titleWithFooters)
-		setPriority;
-		titleWithFormat: (self asTitle: 'Towards Actionable Visualization:');
-		subtitleWithFormat: (self asSubtitle: 'Ten Years Later, What Generative AI Changes and What It Cannot');
-		newFooterWithFormat: (self asBigText: 'Leonel Merino');
-		newFooterWithFormat: (self asBigText: 'Mohammad Ghafari');
-		newFooterWithFormat: (self asBigText: 'Oscar Nierstrasz') underline
-]
-
-{ #category : 'slides' }
-VISSOFT2026Slideshow >> whereAreWe: aSlide [
-	<gtSlide>
-	<text:
-'TODO # Where are we?
 AI builds a visualization. Explains in text what it did.
 Do we understand it? Do we trust it?
 Show a visualization built by a standard tool.
@@ -266,9 +248,49 @@ How do we interpret the result? What can we do with it?'>
 ''>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Temaplte');
+		subtitleWithFormat: (self asSubtitle: 'Visualization without a model');
 		paragraphWithFormat: (self
 				asText: 
 '
 ')
+]
+
+{ #category : 'slides' }
+VISSOFT2026Slideshow >> thenAndNow: aSlide [
+	<gtSlide>
+	<text:
+'TODO: summarize past and issues today # Then and now
+
+Ten years ago ... what has changed?
+Do AIs / LLMs solve the visualization problem?
+Main issues: trust, interpretation 
+
+
+'>
+<demo:
+''>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Then and now');
+		paragraphWithFormat: (self
+				asText: 
+'
+')
+]
+
+{ #category : 'slides' }
+VISSOFT2026Slideshow >> title: aSlide [
+	<gtSlide>
+<text:
+'TODO: write up intro text # Towards Actionable Visualization: Ten Years Later
+
+What Generative AI Changes and What It Cannot.
+'>
+	^ (aSlide titleWithFooters)
+		setPriority;
+		titleWithFormat: (self asTitle: 'Towards Actionable Visualization:');
+		subtitleWithFormat: (self asSubtitle: 'Ten Years Later, What Generative AI Changes and What It Cannot');
+		newFooterWithFormat: (self asBigText: 'Leonel Merino');
+		newFooterWithFormat: (self asBigText: 'Mohammad Ghafari');
+		newFooterWithFormat: (self asBigText: 'Oscar Nierstrasz') underline
 ]
