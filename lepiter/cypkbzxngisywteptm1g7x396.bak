@@ -132,6 +132,81 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-03T11:08:09.40807+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-03T14:19:04.745321+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "gFE2CiyTRF6qruW81HuMOw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Title slide\n\nTen years ago ... what has changed?\nDo AIs / LLMs solve the visualization problem?\nMain issues: trust, interpretation \n\nWhere are we?\nAI builds a visualization. Explains in text what it did.\nDo we understand it? Do we trust it?\nShow a visualization built by a standard tool.\nTO DO try with chatGPT or Gemini\nIssues\nHow did it do the work (in detail)?\nDoes the visualization truly reflect the data?\nWhat is the underlying model?\nHow do we interpret the result? What can we do with it?\n\nApproaches\nBuild a navigable model first.\nHave cheap, composable visualization engine.\nModel and visualize the LLM interactions and actions themselves. \nEnable the LLM to see and interpret the generated views.\n\nCase study — the 2016 dataset.\nBuild a model, proving detailed instructions (no magic). \nAdd basic visualizations (views). \nViews are simple, cheap, composable and navigable.\nViews are just extensions to the model.\nTO DO — can we demo the model creation?\n\nReifying the chat\nThe generation process is itself modeled, visualized and navigable.\n\nCode Changes\nCode changes can also be visualized and explored.\nTO DO — need a code change scenario. Refactoring?\n\nBuild visualizations\nWe build a Mondrian graph. Instead of being just a picture, it is navigable and is just an extension to the model.\n\nOther visualizations?\nBar graph?\nDo we have a decent bar graph example?\nLine graph? Tree map?\n\nLLM interpreting the results\nThe LLM can also leverage the views.\nTO DO — need a good demo. \nAsk it to assess the goal from the abstract. \n\nConclusions \nTO DO\n"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-03T11:08:01.153422+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-03T11:08:05.092687+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "5dfU7syqTkuQBntxjLA0oQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Outline"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2026-08-21T09:02:41.007418+02:00"
 								}
 							},
