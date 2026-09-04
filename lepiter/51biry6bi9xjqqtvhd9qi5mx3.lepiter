@@ -140,48 +140,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-02T17:11:33.285649+02:00"
+						"dateAndTimeString" : "2026-09-04T16:42:17.924035+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "Gj+sq3rGT3qGC25tcbI3ew=="
 				},
-				"code" : "VSLoadSnapshot new incrementalFullModel.\r#VSStudyExamples asClass new study"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-02T17:17:07.096959+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-02T17:17:15.450686+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "mkytubC7RyW8i7nl7BiNmg=="
-				},
-				"code" : "VSLoadSnapshot new incrementalFullModelWithoutMondrianGraphs.\r#VSStudyExamples asClass new study"
+				"code" : "VSLoadSnapshot new incrementalFullModelStudyExample"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -208,14 +174,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T16:28:31.140282+02:00"
+						"dateAndTimeString" : "2026-09-04T16:42:15.700309+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "vHDcwuUdSUKnb98HAvvc5w=="
 				},
-				"code" : "VSLoadSnapshot new oneShotModel.\r#VISSOFTDatasetExamples asClass new dataset"
+				"code" : "VSLoadSnapshot new oneShotModelStudyExample"
 			},
 			{
 				"__type" : "textSnippet",
@@ -371,82 +337,7 @@
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2026-09-03T16:54:05.35257+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2026-09-03T18:12:39.731445+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "Ahv0gxbdRwi26JclnEbiOQ=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "[[Building a domain model from the raw CSV data]]"
-									},
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2026-09-04T09:30:30.151458+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2026-09-04T16:25:36.619236+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "71cp4Ub5S8GLXaWcLkhosA=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "[[Generating a Mondrian graph view]]"
-									}
-								]
+								"items" : [ ]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -456,7 +347,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-09-03T16:20:08.727268+02:00"
+									"dateAndTimeString" : "2026-09-03T16:54:05.35257+02:00"
 								}
 							},
 							"editEmail" : {
@@ -467,17 +358,54 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-09-04T16:18:40.264588+02:00"
+									"dateAndTimeString" : "2026-09-03T18:12:39.731445+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "LbkOFd/RRsO7YnjU3YncXA=="
+								"uidString" : "Ahv0gxbdRwi26JclnEbiOQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Pages for the slideshow]]"
+							"string" : "[[Building a domain model from the raw CSV data]]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-04T09:30:30.151458+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-04T16:25:36.619236+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "71cp4Ub5S8GLXaWcLkhosA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Generating a Mondrian graph view]]"
 						}
 					]
 				},
@@ -898,7 +826,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-02T15:02:15.150485+02:00"
+						"dateAndTimeString" : "2026-09-04T16:44:39.308722+02:00"
 					}
 				},
 				"editEmail" : {
@@ -909,12 +837,12 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-02T15:02:26.051611+02:00"
+						"dateAndTimeString" : "2026-09-04T16:44:39.308722+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "/rjL99xhTSqS5KVwyhhMGg=="
+					"uidString" : "Ak5Z3KRpSPi+1JOQwuYzJw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
