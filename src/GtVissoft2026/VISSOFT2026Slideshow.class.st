@@ -28,7 +28,6 @@ We feed this documentation to the LLM and let it build the model.
 - Show how the views are cheap to implement and easy to navigate.
 
 '>
-		VSLoadSnapshot new clearVSPackage.
 		^ aSlide lepiterPage
 		setPriority;
 		pageNamed: 'Building a domain model from the raw CSV data' from: 'VISSOFT 2026';

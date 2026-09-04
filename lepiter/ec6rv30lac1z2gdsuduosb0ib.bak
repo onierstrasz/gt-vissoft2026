@@ -18,6 +18,77 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-04T15:40:17.713892+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-04T15:40:27.385995+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kASWSAXqSC2SsQBmsYR8GQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Start from a clean state."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-04T15:40:03.64762+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-04T15:40:06.627529+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "/tPZnFBdRbKjyIRgp8PEoQ=="
+				},
+				"code" : "VSLoadSnapshot new clearVSPackage"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2026-09-03T18:14:40.143903+02:00"
 					}
 				},
@@ -126,74 +197,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-03T18:25:36.333035+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-03T18:25:54.843224+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "nNLHJLVaT/umWjvyJosjZw=="
-				},
-				"code" : "VSFiles new dataFolder"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-03T18:26:06.301896+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-03T18:26:11.332955+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "g74dqzpyT06+T+gAgPYMhQ=="
-				},
-				"code" : "FileLocator gtResource / 'feenkcom/gtoolkit-demos/data/visualisation-review'"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2026-09-03T18:13:17.398851+02:00"
 					}
 				},
@@ -205,14 +208,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-03T18:14:36.474736+02:00"
+						"dateAndTimeString" : "2026-09-03T18:26:33.123195+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "bqTVOU9IRv+rrwQBJEy8BQ=="
 				},
-				"code" : "chat\r\tsendMarkdown: 'There are two CSV files in the folder returned by `FileLocator gtResource / ''feenkcom/gtoolkit-demos/data/visualisation-review''` describing a dataset of software visualization papers. Create a package VISSOFT with classes that model the dataset, papers, authors, and types of papers. Create examples to test each class. Add views to enable navigation from the dataset to the list of papers, papers by year, and authors.  Use a *Moldable Collection Wrapper* to represent a group of papers, respectively a group of authors. Add views to navigate from a paper to its authors and vice versa.'"
+				"code" : "chat\r\tsendMarkdown: 'There are two CSV files in the folder returned by `VSFiles new dataFolder` describing a dataset of software visualization papers. Create a package VISSOFT with classes that model the dataset, papers, authors, and types of papers. Create examples to test each class. Add views to enable navigation from the dataset to the list of papers, papers by year, and authors.  Use a *Moldable Collection Wrapper* to represent a group of papers, respectively a group of authors. Add views to navigate from a paper to its authors and vice versa.'"
 			},
 			{
 				"__type" : "textSnippet",

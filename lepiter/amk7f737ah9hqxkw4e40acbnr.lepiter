@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T09:56:36.946282+02:00"
+						"dateAndTimeString" : "2026-09-04T15:48:25.005764+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,41 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Start with a model."
+				"string" : "Start with a model if we don't already have one loaded ..."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-04T15:48:02.15728+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-04T15:48:09.920078+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "SG5V6KTnTQ6Jih1II6RdQQ=="
+				},
+				"code" : "VSLoadSnapshot new vsPackage."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -215,41 +249,7 @@
 					"__type" : "uid",
 					"uidString" : "9DqYpGawRz2ds7jzQh6u6Q=="
 				},
-				"string" : "self gtPageExplanation: 'Drawing graphs with Mondrian by example'"
-			},
-			{
-				"__type" : "blockQuoteSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T10:01:46.055713+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T10:01:46.055713+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Lll3pGA4TqOOtmpNGrf5lg=="
-				},
-				"string" : "self\r\t\t\tgtPageExplanation: 'Drawing graphs with Mondrian by example';\r\t\t\tgtPageExplanation: 'Molding CSV data — actions, queries and visualizations'."
+				"string" : "self\n\tgtPageExplanation: 'Drawing graphs with Mondrian by example';\n\tgtPageExplanation: 'Tutorial: molding CSV data into an explainable system'"
 			},
 			{
 				"__type" : "textSnippet",
@@ -265,7 +265,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T10:01:20.754673+02:00"
+						"dateAndTimeString" : "2026-09-04T15:50:45.257528+02:00"
 					}
 				},
 				"editEmail" : {
@@ -276,7 +276,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T10:04:31.686079+02:00"
+						"dateAndTimeString" : "2026-09-04T15:50:54.975018+02:00"
 					}
 				},
 				"uid" : {
@@ -286,109 +286,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "prompt — FIX THIS"
-			},
-			{
-				"__type" : "blockQuoteSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T10:04:37.198102+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T10:04:37.198102+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "B3zlR5oLQ62Dl7a5+Q8VJw=="
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "blockQuoteSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T10:04:37.422626+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T10:04:37.422626+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "GedH6y4kR8q1Y567fNcsAw=="
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "blockQuoteSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T10:04:37.636663+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T10:04:37.636663+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "mDzXTERQR26Cu8R+XSnXaw=="
-				},
-				"string" : ""
+				"string" : "prompt to build the graph view"
 			},
 			{
 				"__type" : "blockQuoteSnippet",
@@ -422,75 +320,7 @@
 					"__type" : "uid",
 					"uidString" : "UgpWNjeGTrqTy/sSvdaeiQ=="
 				},
-				"string" : "Create a Mondrian view with a force-based layout of a three-level graph of an author, its papers, and their co-authors. Represent each author as a light blue square with size proportional to the number of authored papers, and with authors initials (given name and surname) as the (centred) label. Hovering over the author box should show the full author name. Represent papers as light pink circles with their size proportional to the number of authors. Hovering over a paper will show its title. Clicking on a node will navigate to the paper or author."
-			},
-			{
-				"__type" : "blockQuoteSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T10:02:45.946772+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T10:02:45.946772+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "utmkgPj1TWiA1f8t1XOo+g=="
-				},
-				"string" : "Create a Mondrian view with a force-based layout of a three-level graph of an author, its papers, and their co-authors. Represent each author as a light blue square with size proportional to the number of authored papers, and with authors initials (given name and surname) as the (centred) label. Hovering over the author box should show the full author name. Represent papers as light pink circles with their size proportional to the number of authors. Hovering over a paper will show its title. Clicking on a node will navigate to the paper or author."
-			},
-			{
-				"__type" : "blockQuoteSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T10:03:26.119586+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T10:03:26.119586+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "/VHcAgaCSGmrDFl4bLh6/g=="
-				},
-				"string" : "Create a Mondrian graph of Design study papers in the VISSOFT package, and recursively reachable authors of those papers, and other papers they have published in this dataset. Represent each author as a light blue square with size proportional to the number of authored papers, and with authors initials (given name and surname) as the (centred) label. Hovering over the author box should show the full author name. Represent papers as light pink circles with their size proportional to the number of authors. Design study papers should have a red border. Hovering over a paper will show its title. Clicking on a node will navigate to the corresponding paper or author."
+				"string" : "Create a Mondrian view with a force-based layout of an author, and all their reachable papers and co-authors. Represent each author as a light blue square with size proportional to the number of authored papers, and with authors initials (given name and surname) as the centred label. Hovering over the author box should show the full author name. Represent papers as light pink circles with their size proportional to the number of authors. Hovering over a paper should show its title. Clicking on a node will navigate to the paper or author."
 			},
 			{
 				"__type" : "textSnippet",
@@ -577,7 +407,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T10:00:45.733484+02:00"
+						"dateAndTimeString" : "2026-09-04T15:54:28.130464+02:00"
 					}
 				},
 				"editEmail" : {
@@ -588,7 +418,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T10:01:06.389195+02:00"
+						"dateAndTimeString" : "2026-09-04T15:54:32.658506+02:00"
 					}
 				},
 				"uid" : {
@@ -598,7 +428,41 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "In case it takes too long ..."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-04T15:54:34.153322+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-04T16:01:25.845517+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "6U8Lx/6PQhOKRLL2JDSz3g=="
+				},
+				"code" : "VSLoadSnapshot new incrementalFullModel.\r#VSStudyExamples asClass new study"
 			},
 			{
 				"__type" : "textSnippet",
