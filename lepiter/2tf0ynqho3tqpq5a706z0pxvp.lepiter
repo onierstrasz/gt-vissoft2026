@@ -210,14 +210,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-09-02T17:20:38.388427+02:00"
+									"dateAndTimeString" : "2026-09-04T16:28:31.236012+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "DUUXTithQCaChbfUMeyJcQ=="
 							},
-							"code" : "VSLoadSnapshot new oneShotModelGeneration.\r#VISSOFTDatasetExamples asClass new dataset"
+							"code" : "VSLoadSnapshot new oneShotModel.\r#VISSOFTDatasetExamples asClass new dataset"
 						}
 					]
 				},
@@ -465,14 +465,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-09-02T18:19:41.015049+02:00"
+									"dateAndTimeString" : "2026-09-04T16:28:31.138303+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "Yr7A8vgVSHGzPi77Vk/kuQ=="
 							},
-							"code" : "VSLoadSnapshot new oneShotModelGeneration.\r#VISSOFTDatasetExamples asClass new dataset"
+							"code" : "VSLoadSnapshot new oneShotModel.\r#VISSOFTDatasetExamples asClass new dataset"
 						},
 						{
 							"__type" : "pharoSnippet",

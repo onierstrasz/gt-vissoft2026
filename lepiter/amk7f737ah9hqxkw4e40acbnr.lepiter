@@ -100,14 +100,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T09:56:49.301175+02:00"
+						"dateAndTimeString" : "2026-09-04T16:28:31.32354+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "6s6vRVfUTsqGPZp5HMIOMA=="
 				},
-				"code" : "VSLoadSnapshot new oneShotModelGeneration."
+				"code" : "VSLoadSnapshot new oneShotModel."
 			},
 			{
 				"__type" : "textSnippet",
@@ -171,14 +171,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T09:59:33.578896+02:00"
+						"dateAndTimeString" : "2026-09-04T16:08:28.438152+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "adsLlXAXQ+upPuAN6mrdvw=="
 				},
-				"code" : "VISSOFTDatasetExamples new dataset authors\r\tdetect: [ :author | author name beginsWith: 'Lanza' ]"
+				"code" : "study := VISSOFTDatasetExamples new dataset.\rstudy authors detect: [ :author | author name beginsWith: 'Lanza' ]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -455,14 +455,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T16:01:25.845517+02:00"
+						"dateAndTimeString" : "2026-09-04T16:37:26.363437+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "6U8Lx/6PQhOKRLL2JDSz3g=="
 				},
-				"code" : "VSLoadSnapshot new incrementalFullModel.\r#VSStudyExamples asClass new study"
+				"code" : "study := VSLoadSnapshot new incrementalFullModelStudyExample.\rstudy authors detect: [ :author | author name beginsWith: 'Lanza' ]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -522,12 +522,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-09-04T09:30:54.203146+02:00"
+			"dateAndTimeString" : "2026-09-04T16:25:36.609774+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Building a new mondrian graph for an existing model"
+		"title" : "Generating a Mondrian graph view"
 	},
 	"uid" : {
 		"__type" : "uuid",

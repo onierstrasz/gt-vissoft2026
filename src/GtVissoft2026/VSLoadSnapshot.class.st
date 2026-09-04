@@ -90,33 +90,46 @@ VSLoadSnapshot >> fileIn: fileOutName [
 
 { #category : 'examples' }
 VSLoadSnapshot >> incrementalFullModel [
+	"A rich model with multiple views and actions created incrementally with a series a prompts, 
+	starting with the page: Building the VISSOFT case study model"
+
 	<gtExample>
 	<noTest>
 	^ self fileIn: 'VISSOFT-full-model.st'
 ]
 
 { #category : 'examples' }
-VSLoadSnapshot >> incrementalFullModelWithoutMondrianGraphs [
-	"Same as incrementalFullModel but without the Mondrian graphs and views."
+VSLoadSnapshot >> incrementalFullModelStudyExample [
+	"A rich model with multiple views and actions created incrementally with a series a prompts, 
+	starting with the page: Building the VISSOFT case study model"
 
 	<gtExample>
 	<noTest>
-	^ self fileIn: 'VISSOFT-model-without-mondrian-views.st'
+	| study |
+	self incrementalFullModel.
+	study := #VSStudyExamples asClass new perform: #study.
+	^ study
 ]
 
 { #category : 'examples' }
-VSLoadSnapshot >> oneShotModelGeneration [
+VSLoadSnapshot >> oneShotModel [
+	"A basic model generated with a single  prompt. See the page: One shot model creation"
+
 	<gtExample>
 	<noTest>
 	^ self fileIn: 'VISSOFT-1shot-model-creation.st'
 ]
 
 { #category : 'examples' }
-VSLoadSnapshot >> oneShotModelGenerationWithClutteredMondrian [
-	"Not a really nice result to show ..."
+VSLoadSnapshot >> oneShotModelStudyExample [
+	"A basic model generated with a single  prompt. See the page: One shot model creation"
+
 	<gtExample>
 	<noTest>
-	^ self fileIn: 'VISSOFT-1shot-model-with-cluttered-mondrian.st'
+	| study |
+	self oneShotModel.
+	study := #VISSOFTDatasetExamples asClass new perform: #dataset.
+	^ study
 ]
 
 { #category : 'examples' }

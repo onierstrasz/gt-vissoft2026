@@ -313,7 +313,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-03T18:17:26.324313+02:00"
+						"dateAndTimeString" : "2026-09-04T16:17:44.942506+02:00"
 					}
 				},
 				"uid" : {
@@ -323,7 +323,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Here is the result of an earlier attempt:"
+				"string" : "In casse that takes too  long, here is the result of an earlier attempt:"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -350,14 +350,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-03T18:17:06.47382+02:00"
+						"dateAndTimeString" : "2026-09-04T16:36:48.480879+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "jcoGCuwlRrSz82Wnlo1RSg=="
 				},
-				"code" : "VSLoadSnapshot new oneShotModelGeneration.\r#VISSOFTDatasetExamples asClass new dataset"
+				"code" : "VSLoadSnapshot new oneShotModelStudyExample"
 			}
 		]
 	},

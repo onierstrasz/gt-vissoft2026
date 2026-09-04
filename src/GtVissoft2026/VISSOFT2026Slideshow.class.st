@@ -34,27 +34,6 @@ We feed this documentation to the LLM and let it build the model.
 		yourself
 ]
 
-{ #category : 'slides' }
-VISSOFT2026Slideshow >> caseStudy: aSlide [
-	<gtSlide>
-	<text:
-'TODO: introduce the case study; generate and show the model; show the cheap views # Case study — the 2016 dataset.
-Build a model, proving detailed instructions (no magic). 
-Add basic visualizations (views). 
-Views are simple, cheap, composable and navigable.
-Views are just extensions to the model.
-TO DO — can we demo the model creation?'>
-<demo:
-''>
-	^ aSlide paragraph
-		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Building a model');
-		paragraphWithFormat: (self
-				asText: 
-'
-')
-]
-
 { #category : 'page' }
 VISSOFT2026Slideshow >> chaGptVisualizationPage [
 	<lePage>
@@ -74,110 +53,37 @@ VISSOFT2026Slideshow >> chaGptVisualizationPage [
 ]
 
 { #category : 'slides' }
-VISSOFT2026Slideshow >> codeChanges: aSlide [
+VISSOFT2026Slideshow >> generatingAGraphView: aSlide [
 	<gtSlide>
 	<text:
-'TODO: show how the result of a chat can be explorable diffs # Code Changes
-Code changes can also be visualized and explored.
-TO DO — need a code change scenario. Refactoring?'>
+'TODO # Generating a graph view
+'>
 <demo:
 ''>
-	^ aSlide paragraph
+		^ aSlide lepiterPage
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Modeling code changes');
-		paragraphWithFormat: (self
-				asText: 
-'
-')
-]
-
-{ #category : 'slides' }
-VISSOFT2026Slideshow >> generatingVisualizations: aSlide [
-	<gtSlide>
-	<text:
-'TODO: show the generated mondrian graphs # Generating visualizations
-
-Can we demo the construction?
-
-Key point: model-based, not just a picture
-
-We build a Mondrian graph. Instead of being just a picture, it is navigable and is just an extension to the model.'>
-<demo:
-''>
-	^ aSlide paragraph
-		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Generating a graph visualization');
-		paragraphWithFormat: (self
-				asText: 
-'
-')
+		pageNamed: 'Generating a Mondrian graph view' from: 'VISSOFT 2026';
+		yourself
 ]
 
 { #category : 'slides' }
 VISSOFT2026Slideshow >> howToTrustAnLLM: aSlide [
 	<gtSlide>
-	<text:
-'# How to build trust in an LLM
+	<text: '# How to build trust in an LLM
 
 — Model the domain — don''t just work with raw data.
 — Extend the model with composable views — views should be cheap to create, and enable navigation through the model
 — Model the Chat — expose the LLM interactions using composable views
 — Expose views to the LLM  — enable the LLM to see and interpret the generated views.'>
-<demo:
-''>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'How to build trust in an LLM');
 		paragraphWithFormat: (self
-				asText: 
-'
+				asText: '
 — Model the domain
 — Extend the model with cheap, composable views
 — Model the Chat
 — Expose views to the LLM
-')
-]
-
-{ #category : 'slides' }
-VISSOFT2026Slideshow >> interpretingResults: aSlide [
-	<gtSlide>
-	<text:
-'TODO: show how the LLM can access and interpret a view # LLM interpreting the results
-
-TO DO — need a good demo. 
-
-The LLM can also leverage the views.
-Ask it to assess the goal from the abstract. 
-'>
-<demo:
-''>
-	^ aSlide paragraph
-		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'LLMs interpreting views');
-		paragraphWithFormat: (self
-				asText: 
-'
-')
-]
-
-{ #category : 'slides' }
-VISSOFT2026Slideshow >> otherVisualizations: aSlide [
-	<gtSlide>
-	<text:
-'TODO: prepare a list of example to show if we have time ... # Other visualizations?
-
-Can we demo the construction?
-Bar graph?
-Do we have a decent bar graph example?
-Line graph? Tree map?'>
-<demo:
-''>
-	^ aSlide paragraph
-		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Temaplte');
-		paragraphWithFormat: (self
-				asText: 
-'
 ')
 ]
 
@@ -186,27 +92,6 @@ VISSOFT2026Slideshow >> picturesDirectoryPath [
 	"Default path may be overridden"
 
 	^ Path * 'onierstrasz' / 'gt-vissoft2026' / 'images'
-]
-
-{ #category : 'slides' }
-VISSOFT2026Slideshow >> reifyingChats: aSlide [
-	<gtSlide>
-	<text:
-'TODO: show the steps of the process (fold into previous?) # Reifying the chat
-
-Do we need a separate slide for this?
-Can we show this in the previous slide?
-
-The generation process is itself modeled, visualized and navigable.'>
-<demo:
-''>
-	^ aSlide paragraph
-		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Reifying the chat');
-		paragraphWithFormat: (self
-				asText: 
-'
-')
 ]
 
 { #category : 'acccessing' }
@@ -219,13 +104,7 @@ VISSOFT2026Slideshow >> slidePriorities [
 		theTroubleWithAI:
 		howToTrustAnLLM:
 		buildingAModel:
-		
-		caseStudy:
-		reifyingChats:
-		codeChanges:
-		generatingVisualizations:
-		otherVisualizations:
-		interpretingResults:
+		generatingAGraphView:
 		summary:
 		)	
 ]

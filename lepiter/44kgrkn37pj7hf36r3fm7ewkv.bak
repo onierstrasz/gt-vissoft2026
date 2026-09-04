@@ -62,12 +62,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-09-04T16:18:40.255544+02:00"
+			"dateAndTimeString" : "2026-09-03T16:19:55.821278+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Pages for the slideshow"
+		"title" : "Draft pages for the slideshow"
 	},
 	"uid" : {
 		"__type" : "uuid",

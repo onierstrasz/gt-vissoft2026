@@ -434,7 +434,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2026-09-04T09:30:38.413845+02:00"
+												"dateAndTimeString" : "2026-09-04T16:25:36.619236+02:00"
 											}
 										},
 										"uid" : {
@@ -444,7 +444,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[Building a new mondrian graph for an e"
+										"string" : "[[Generating a Mondrian graph view]]"
 									}
 								]
 							},
@@ -467,7 +467,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-09-03T16:20:10.548826+02:00"
+									"dateAndTimeString" : "2026-09-04T16:18:40.264588+02:00"
 								}
 							},
 							"uid" : {
@@ -477,7 +477,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Draft pages for the slideshow]]"
+							"string" : "[[Pages for the slideshow]]"
 						}
 					]
 				},

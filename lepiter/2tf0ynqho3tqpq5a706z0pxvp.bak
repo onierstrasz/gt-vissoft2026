@@ -641,14 +641,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-09-02T18:42:03.733688+02:00"
+									"dateAndTimeString" : "2026-09-02T18:42:09.310306+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "9Hi78YhsT4Sp2tEncJLjPQ=="
 							},
-							"code" : "VSLoadSnapshot new oneShotModelGeneration.\r#VISSOFTDatasetExamples asClass new dataset"
+							"code" : "VSLoadSnapshot new oneShotModelGenerationWithClutteredMondrian.\r#VISSOFTDatasetExamples asClass new dataset"
 						},
 						{
 							"__type" : "textSnippet",
