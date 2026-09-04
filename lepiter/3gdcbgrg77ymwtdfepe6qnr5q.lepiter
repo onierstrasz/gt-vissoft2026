@@ -8,7 +8,45 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-04T08:28:40.860426+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-04T08:29:09.830974+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "s0EwTsVaTGCfNARFE55Iaw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Hi Oscar,\n\nThe extended dataset is here: [](https://scg.unibe.ch/assets/files/75/glrwb4ijyyqpvk5cqodh2vo17y8zhx/software_visualization.ods)\n\nI suspect I forgot to remove those columns with numbers. It seems that I used them to create some of the tables and charts in the paper. \n\nI also found the slides I used to present the original paper. You can find them here:\nIn PDF: [](https://www.dropbox.com/scl/fi/wrxw0ho6oc9r1cnonmku8/Review-VISSOFT16-PDF.pdf?rlkey=3kizir7qr20y4gphfxhd4in4j&st=dnphnxmq&dl=0)\nIn Keynote format: [](https://www.dropbox.com/scl/fi/r66liwpd2z9t96iuqmi0f/Review-VISSOFT16.key?rlkey=ftj69lc4j44mxiwhz5n6uqetm&st=0g2wh3aa&dl=0)\n\nBest regards,\nLeonel"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -55,7 +93,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T08:28:40.860426+02:00"
+						"dateAndTimeString" : "2026-09-04T08:41:17.721844+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +104,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T08:29:09.830974+02:00"
+						"dateAndTimeString" : "2026-09-04T08:41:20.754336+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "s0EwTsVaTGCfNARFE55Iaw=="
+					"uidString" : "Ogsu1EWPToyx6e1Aok+sAg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Hi Oscar,\n\nThe extended dataset is here: [](https://scg.unibe.ch/assets/files/75/glrwb4ijyyqpvk5cqodh2vo17y8zhx/software_visualization.ods)\n\nI suspect I forgot to remove those columns with numbers. It seems that I used them to create some of the tables and charts in the paper. \n\nI also found the slides I used to present the original paper. You can find them here:\nIn PDF: [](https://www.dropbox.com/scl/fi/wrxw0ho6oc9r1cnonmku8/Review-VISSOFT16-PDF.pdf?rlkey=3kizir7qr20y4gphfxhd4in4j&st=dnphnxmq&dl=0)\nIn Keynote format: [](https://www.dropbox.com/scl/fi/r66liwpd2z9t96iuqmi0f/Review-VISSOFT16.key?rlkey=ftj69lc4j44mxiwhz5n6uqetm&st=0g2wh3aa&dl=0)\n\nBest regards,\nLeonel"
+				"string" : "Files copied here:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-04T08:41:22.516025+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-04T08:41:31.067474+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "vfzTFn96QMOuluYAHR2eWw=="
+				},
+				"code" : "VSFiles new filesFolder"
 			}
 		]
 	},
