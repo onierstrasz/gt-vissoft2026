@@ -1,0 +1,113 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-04T08:28:36.629487+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-04T08:28:39.676396+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "XNQ696BSSSigeyMYNazTmA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Email from Leonel:"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-04T08:28:40.860426+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-04T08:29:09.830974+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "s0EwTsVaTGCfNARFE55Iaw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Hi Oscar,\n\nThe extended dataset is here: [](https://scg.unibe.ch/assets/files/75/glrwb4ijyyqpvk5cqodh2vo17y8zhx/software_visualization.ods)\n\nI suspect I forgot to remove those columns with numbers. It seems that I used them to create some of the tables and charts in the paper. \n\nI also found the slides I used to present the original paper. You can find them here:\nIn PDF: [](https://www.dropbox.com/scl/fi/wrxw0ho6oc9r1cnonmku8/Review-VISSOFT16-PDF.pdf?rlkey=3kizir7qr20y4gphfxhd4in4j&st=dnphnxmq&dl=0)\nIn Keynote format: [](https://www.dropbox.com/scl/fi/r66liwpd2z9t96iuqmi0f/Review-VISSOFT16.key?rlkey=ftj69lc4j44mxiwhz5n6uqetm&st=0g2wh3aa&dl=0)\n\nBest regards,\nLeonel"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2026-09-04T08:28:29.766148+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2026-09-04T08:28:29.766148+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Journal dataset"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "3e3b2c5a-b5f7-4e5e-a83f-f04b78cd5a3a"
+	}
+}

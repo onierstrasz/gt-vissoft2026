@@ -397,7 +397,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2026-09-03T18:12:17.463341+02:00"
+												"dateAndTimeString" : "2026-09-03T18:12:39.731445+02:00"
 											}
 										},
 										"uid" : {
@@ -407,7 +407,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[...]"
+										"string" : "[[Building a domain model from the raw CSV data]]"
 									}
 								]
 							},
