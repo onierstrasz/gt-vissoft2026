@@ -407,7 +407,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T15:54:28.130464+02:00"
+						"dateAndTimeString" : "2026-09-04T18:29:09.726125+02:00"
 					}
 				},
 				"editEmail" : {
@@ -418,7 +418,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T15:54:32.658506+02:00"
+						"dateAndTimeString" : "2026-09-04T18:29:11.459629+02:00"
 					}
 				},
 				"uid" : {
@@ -428,7 +428,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "In case it takes too long ..."
+				"string" : "If that take"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -455,14 +455,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T16:37:24.8713+02:00"
+						"dateAndTimeString" : "2026-09-04T16:37:26.363437+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "6U8Lx/6PQhOKRLL2JDSz3g=="
 				},
-				"code" : "study := VSLoadSnapshot new incrementalFullModelStudyExample.\rstudy authors\r\tdetect: [ :author | author name beginsWith: 'Lanza' ]"
+				"code" : "study := VSLoadSnapshot new incrementalFullModelStudyExample.\rstudy authors detect: [ :author | author name beginsWith: 'Lanza' ]"
 			},
 			{
 				"__type" : "textSnippet",

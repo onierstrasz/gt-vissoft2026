@@ -407,7 +407,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T15:54:28.130464+02:00"
+						"dateAndTimeString" : "2026-09-04T18:29:09.726125+02:00"
 					}
 				},
 				"editEmail" : {
@@ -418,7 +418,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-09-04T15:54:32.658506+02:00"
+						"dateAndTimeString" : "2026-09-04T18:29:33.409737+02:00"
 					}
 				},
 				"uid" : {
@@ -428,7 +428,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "In case it takes too long ..."
+				"string" : "If that takes to long, we can skip to a previously generated model with similar graph visualizations."
 			},
 			{
 				"__type" : "pharoSnippet",
