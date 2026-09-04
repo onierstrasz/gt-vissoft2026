@@ -57,6 +57,118 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-04T19:03:58.378628+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-04T19:04:03.268068+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "kREpj8hBS9GRrLR1Au+Sbg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We reflect on how generative AI changes the creation of software visualizations—and why convincing outputs alone are not enough. Through live demonstrations, the talk shows how grounding LLMs in explicit domain models, executable examples, and cheap, composable interactive views makes both the generated visualizations and the AI’s reasoning inspectable. The aim is to turn AI from an opaque visualization generator into an evidence-oriented collaborator that supports exploration, validation, critique, and improvement."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-04T19:05:10.435845+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-09-04T19:05:11.721735+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "WGXJ0jpOQeeGBeJ5nA2ihQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[](https://www.oscar.nierstrasz.org/talks/2026-09-15-TowardsActionableVisualization-TenYearsLater)"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-04T19:03:53.258666+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-09-04T19:03:57.501689+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ygPPcocYRcuEnrENTt8QQg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Abstract (generated)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2026-08-20T16:32:25.757524+02:00"
 								}
 							},
